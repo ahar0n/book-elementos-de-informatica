@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almacenamiento masivo &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Representación de la información" href="representacion-de-la-informacion.html" />
+    <link rel="prev" title="Memoria principal" href="memoria-principal.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ejercicios.html">
+   Ejercicios
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/almacenamiento-digital/almacenamiento-masivo.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/almacenamiento-digital/almacenamiento-masivo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sistemas-magneticos">
+   Sistemas magnéticos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sistemas-opticos">
+   Sistemas ópticos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unidades-flash">
+   Unidades flash
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografia
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="almacenamiento-masivo">
+<h1>Almacenamiento masivo<a class="headerlink" href="#almacenamiento-masivo" title="Permalink to this headline">¶</a></h1>
+<p>Debido a la volatilidad y al tamaño limitado de la memoria principal, la mayoría de los computadores incluyen dispositivos de memoria adicionales llamados sistemas de almacenamiento masivo (o almacenamiento secundario). Entre estos, se incluyen discos magnéticos, <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a>, unidades flash y <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>. Las ventajas de los sistemas de almacenamiento masivo sobre la memoria principal, es que incluyen menos volatilidad, poseen grandes capacidades de almacenamiento, son de bajo costo, entre otros.</p>
+<p>Una desventaja importante de los sistemas de almacenamiento masivo óptico y magnético es que generalmente requieren de movimientos mecánicos y, por lo tanto, requieren mucho más tiempo para almacenar y recuperar datos que la memoria principal, mientras que en esta última todas las actividades se realizan electrónicamente. Además, los sistemas de almacenamiento con partes móviles son propensos a fallas mecánicas.</p>
+<div class="section" id="sistemas-magneticos">
+<h2>Sistemas magnéticos<a class="headerlink" href="#sistemas-magneticos" title="Permalink to this headline">¶</a></h2>
+<p>Durante años la tecnología magnética ha dominado el campo del almacenamiento masivo. El ejemplo más común es el <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a>, habitualmente denominado disco duro. Aunque los <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> dominan el volumen de almacenamiento producido por los servidores, los ingresos por ventas vienen disminuyendo frente al creciente uso de <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> <a class="bibtex reference internal" href="#oreilly-why-2017" id="id1">[3]</a>. Estos últimos proporcionan mayores tasas de transferencia de datos, mayor densidad de almacenamiento de área, mayor confiabilidad <a class="bibtex reference internal" href="#mielke-reliability-2017" id="id2">[2]</a>, y bajos tiempos de latencia y acceso.</p>
+<div class="margin figure align-default" id="fig-disco-duro">
+<img alt="../_images/hdd-external.png" src="../_images/hdd-external.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Componentes físicos de un disco duro.</span><a class="headerlink" href="#fig-disco-duro" title="Permalink to this image">¶</a></p>
+</div>
+<p>Un <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> típico (<a class="reference internal" href="#fig-disco-duro"><span class="std std-numref">Fig. 5</span></a>) consiste en un eje que contiene discos circulares planos, hechos de un material no magnético (e.g., aleación de aluminio, vidrio, cerámica). Están recubiertos con una capa poco profunda de material magnético, con una capa externa de carbono para su protección. Tienen dos motores eléctricos: un motor que hace girar los discos y un actuador que sitúa el cabezal de lectura/escritura en los discos giratorios. Frente al actuador en el extremo del brazo está el cabezal de lectura/escritura. Los cables delgados de circuito conectan los cabezales de lectura/escritura a los componentes electrónicos del amplificador montado en el pivote del actuador. Los discos contemporáneos giran a velocidades que varían desde 4200 <a class="reference internal" href="../anexos/acronimos.html#term-RPM"><span class="xref std std-term">RPM</span></a> en dispositivos portátiles de bajo consumo de energía, hasta 15000 <a class="reference internal" href="../anexos/acronimos.html#term-RPM"><span class="xref std std-term">RPM</span></a> para servidores de alto rendimiento, sin embargo, la mayoría de los <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> de consumo masivo giran entre 5400 a 7200 <a class="reference internal" href="../anexos/acronimos.html#term-RPM"><span class="xref std std-term">RPM</span></a>.</p>
+<p>Los <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> modernos son su tamaño de 3.5 pulgadas, para computadores de escritorio, y 2.5 pulgadas, principalmente para notebook. Las interfaces de conexión se establecen mediante cables de estándar, tales como, <a class="reference internal" href="../anexos/acronimos.html#term-PATA"><span class="xref std std-term">PATA</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-SATA"><span class="xref std std-term">SATA</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-USB"><span class="xref std std-term">USB</span></a> o <a class="reference internal" href="../anexos/acronimos.html#term-SAS"><span class="xref std std-term">SAS</span></a>.</p>
+<p>Para la organización y almacenamiento de la información de una unidad de disco, cada disco se divide en <em>tracks</em>, los cuales forman círculos completos en cada disco, que se dividen a su vez en un número igual de <em>sectors</em> (ver <a class="reference internal" href="#fig-disco-magnetico"><span class="std std-numref">Fig. 6</span></a>).</p>
+<div class="margin figure align-default" id="fig-disco-magnetico">
+<img alt="../_images/hdd-internal.png" src="../_images/hdd-internal.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Sistema de almacenamiento de la información de un disco magnético.</span><a class="headerlink" href="#fig-disco-magnetico" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong><em>Track</em></strong>, círculos concéntricos, conocidos como <em>tracks</em>. Toda la información almacenada en el disco duro se graba en <em>tracks</em>. Comenzando desde cero en el lado externo del disco, el número de <em>tracks</em> continúa aumentando hacia el lado interno.</p></li>
+<li><p><strong><em>Cylinder</em></strong>, conjunto de <em>tracks</em> alineados verticalmente sobre cada del los discos.</p></li>
+<li><p><strong><em>Sector</em></strong>. Cada <em>track</em> se divide en unidades más pequeñas llamadas <em>sectors</em>. Este es la unidad básica de almacenamiento de datos en un disco duro (e.g., 512 <em>bytes</em>).</p></li>
+<li><p><strong><em>Cluster</em></strong>, agrupación de <em>sectors</em>.</p></li>
+</ul>
+<p>Los cabezales de lectura/escritura se sitúan arriba y/o debajo del disco de modo que a medida que el disco gira, cada cabezal atraviesa un <em>track</em>. Cada <em>track</em> se divide en pequeños arcos llamados <em>sectors</em> en los que la información se registra como una cadena continua de <em>bits</em>. Al reposicionar los cabezales de lectura/escritura, se puede acceder a diferentes <em>tracks</em>. En muchos casos, un sistema de almacenamiento en disco consta de varios discos montados en un eje común, uno encima del otro, con espacio suficiente para que los cabezales de lectura/escritura se deslicen entre los platos. En tales casos, los cabezales de lectura/escritura se mueven al unísono. Cada vez que se vuelven a situar los cabezales de lectura/escritura, se vuelve accesible un <em>cylinder</em>.</p>
+<p>Independientemente de los detalles, un sistema de almacenamiento en disco consta de muchos sectores individuales, a cada uno de los cuales se puede acceder como una cadena de <em>bits</em> independiente.</p>
+<p>El rendimiento de un <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> está relacionados principalmente con la naturaleza mecánica de los discos giratorios y los cabezales móviles, que incluye el tiempo de búsqueda, tiempo de latencia, tiempo de acceso y velocidad de transferencia.</p>
+<ul class="simple">
+<li><p>El <strong>tiempo de búsqueda</strong> es medida del tiempo que tiempo requerido para mover los cabezales de lectura/escritura de un <em>track</em> a otro.</p></li>
+<li><p>El <strong>tiempo de latencia</strong> es la mitad del tiempo requerido para que el disco haga una rotación completa, que es la cantidad de tiempo promedio requerida para que los datos (<em>sectors</em>) deseados giren hacia el cabezal de lectura/escritura una vez que el cabezal ha sido situado sobre el <em>track</em> requerido.</p></li>
+<li><p>El <strong>tiempo de acceso</strong> es la suma del tiempo de búsqueda y el retraso de la rotación (tiempo de latencia).</p></li>
+<li><p>La <strong>tasa de transferencia</strong> corresponde a la velocidad a la que se pueden transferir datos hacia o desde el disco. Es decir, una vez que el cabezal está en la posición correcta, el retraso que depende del número de bloques transferidos.</p></li>
+</ul>
+<p>El tiempo de acceso a los datos puede mejorar aumentando la velocidad de rotación (reduciendo la latencia) o reduciendo el tiempo dedicado a la búsqueda.</p>
+<div class="margin figure align-default" id="fig-disquete">
+<img alt="../_images/disquete.png" src="../_images/disquete.png" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Disquete de 3.5 pulgadas.</span><a class="headerlink" href="#fig-disquete" title="Permalink to this image">¶</a></p>
+</div>
+<p>Otras tecnologías de almacenamiento magnético que hoy son menos utilizadas incluyen la cinta magnética, en la que la información se registra en el revestimiento magnético de una cinta de plástico delgada enrollada en carretes, y las unidades de disquete, en las que se colocan discos (<a class="reference internal" href="#fig-disquete"><span class="std std-numref">Fig. 7</span></a>) individuales con un revestimiento magnético en un cartucho portátil diseñado para extraerse (portabilidad) fácilmente de la unidad <em>floppy drive</em> (<a class="reference internal" href="#fig-disquetera"><span class="std std-numref">Fig. 8</span></a>).</p>
+<div class="margin figure align-default" id="fig-disquetera">
+<img alt="../_images/disquetera.png" src="../_images/disquetera.png" />
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Disquetera (<em>floppy drive</em>).</span><a class="headerlink" href="#fig-disquetera" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="sistemas-opticos">
+<h2>Sistemas ópticos<a class="headerlink" href="#sistemas-opticos" title="Permalink to this headline">¶</a></h2>
+<p>El <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> es un ejemplo de tecnología óptica aplicada al almacenamiento masivo. Originalmente, fue aplicada a las grabaciones de audio utilizando un formato de grabación conocido como <a class="reference internal" href="../anexos/acronimos.html#term-CD-DA"><span class="xref std std-term">CD-DA</span></a>, que al igual que los <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> usados para el almacenamiento de datos utilizan el mismo formato.</p>
+<p>Los discos tienen 12 centímetros (5 pulgadas aprox.) de diámetro y consisten en material reflectante cubierto con una capa protectora transparente. La información se registra en ellos creando variaciones en sus superficies reflectantes. Esta información se puede recuperar por medio de un láser que detecta irregularidades en la superficie reflectante del <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> a medida que gira.</p>
+<p>La información se almacena en una sola pista que gira en espiral alrededor del <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>, de adentro hacia afuera y en sentido de las manecillas del reloj (<a class="reference internal" href="#fig-cd"><span class="std std-numref">Fig. 9</span></a>). Esta pista se divide en unidades llamadas sectores, cada uno con sus propias marcas de identificación y una capacidad de 2 KB de datos, lo que equivale a 1/75 segundos de música en el caso de grabaciones de audio. <a class="bibtex reference internal" href="#stan-cd-rom-1998" id="id3">[4]</a></p>
+<div class="margin figure align-default" id="fig-cd">
+<img alt="../_images/cd.png" src="../_images/cd.png" />
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Formato de almacenamiento en un <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>.</span><a class="headerlink" href="#fig-cd" title="Permalink to this image">¶</a></p>
+</div>
+<p>Considerando que la distancia alrededor de la pista en espiral es mayor hacia el borde exterior del disco que en la parte interior, se almacena más información en un bucle alrededor de la porción externa de la espiral que en un bucle alrededor de la porción interna. A su vez, se leerán más sectores en una sola revolución del disco cuando el láser esté escaneando la parte externa de la pista en espiral que cuando el láser esté escaneando la parte interna de la pista. Por lo tanto, para obtener una velocidad uniforme de transferencia de datos, los reproductores de <a class="reference internal" href="../anexos/acronimos.html#term-CD-DA"><span class="xref std std-term">CD-DA</span></a> están diseñados para variar la velocidad de rotación dependiendo de la ubicación del láser. Sin embargo, la mayoría de los sistemas de <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> utilizados para el almacenamiento de datos giran a una velocidad más rápida y constante y, por lo tanto, deben adaptarse a las variaciones en las velocidades de transferencia de datos.</p>
+<p>Como consecuencia del diseño, los sistemas de almacenamiento <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> operan mejor cuando se manejan cadenas de datos largas y continuas, como cuando se reproduce música. Por el contrario, cuando una aplicación requiere acceso a elementos de datos de manera aleatoria, el enfoque utilizado en el almacenamiento en disco magnético (pistas individuales y céntricas divididas en sectores accesibles individualmente) supera al enfoque en espiral utilizado en los <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>.</p>
+<p>Las unidades ópticas son dispositivos que pueden leer y escribir datos en discos ópticos <a class="bibtex reference internal" href="#von-guide-2019" id="id4">[5]</a>. Existen diferencias entre los distintos formatos. Por ejemplo, un <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a> típico tienen capacidades entre 600 a 700 MB. Por otra parte, los <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a>, que están construidos a partir de múltiples capas semitransparentes que sirven como superficies distintas cuando son enfocadas con un láser (color rojo), proporcionan capacidades de almacenamiento de varios GB. Finalmente, la tecnología Blu-ray, que utiliza un láser en el espectro de luz azul-violeta, puede enfocar su rayo láser con una precisión muy fina. Como resultado, los discos Blu-ray proporcionan más de cinco veces la capacidad de un <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a>.</p>
+</div>
+<div class="section" id="unidades-flash">
+<h2>Unidades flash<a class="headerlink" href="#unidades-flash" title="Permalink to this headline">¶</a></h2>
+<p>Una característica común de los sistemas de almacenamiento masivo basados en tecnología magnética u óptica es que requieren movimientos mecánicos para almacenar y recuperar datos, lo cual es lento en comparación con la velocidad de los circuitos electrónicos. La tecnología de memoria <em>flash</em> tiene el potencial de aliviar este inconveniente. En un sistema de memoria flash, los <em>bits</em> se almacenan enviando señales electrónicas directamente al medio de almacenamiento donde hacen que los electrones queden atrapados en pequeñas cámaras de dióxido de silicio, alterando así las características de los pequeños circuitos electrónicos. Dado que estas cámaras pueden mantener sus electrones cautivos durante muchos años sin alimentación externa.</p>
+<div class="margin figure align-default" id="fig-pendrive">
+<img alt="../_images/pendrive.png" src="../_images/pendrive.png" />
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Unidad(pendrive).</span><a class="headerlink" href="#fig-pendrive" title="Permalink to this image">¶</a></p>
+</div>
+<p>Aunque se puede acceder a los datos almacenados en los sistemas de memoriaen pequeñas unidades de tamaño de byte como en las aplicaciones <a class="reference internal" href="../anexos/acronimos.html#term-RAM"><span class="xref std std-term">RAM</span></a>, el borrado repetido daña lentamente las cámaras de dióxido de silicio, lo que significa que la tecnología actual de memoriano es adecuada para aplicaciones generales de memoria principal en las que su contenido puede verse alterado muchas veces por segundo. Sin embargo, en aquellas aplicaciones en las que las alteraciones pueden controlarse a un nivel razonable, como en cámaras digitales y teléfonos inteligentes, la memoriase ha convertido una tecnología de almacenamiento masivo.</p>
+<div class="margin figure align-default" id="fig-ssd">
+<img alt="../_images/ssd-componentes.png" src="../_images/ssd-componentes.png" />
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Componentes de un <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>.</span><a class="headerlink" href="#fig-ssd" title="Permalink to this image">¶</a></p>
+</div>
+<p>Los dispositivos de memoria (unidades <em>flash</em>), están disponibles para aplicaciones generales de almacenamiento masivo con capacidades de cientos de GB. Algunas de estas unidadesse empaquetan en cajas de plástico cada vez más pequeñas con una tapa extraíble en un extremo para proteger el conector eléctrico de la unidad cuando se encuentra desconectada (<a class="reference internal" href="#fig-pendrive"><span class="std std-numref">Fig. 10</span></a>). La alta capacidad de estas unidades portátiles, así como el hecho de que se conectan y desconectan fácilmente de una computadora, las hace ideales para el almacenamiento portátil de datos.</p>
+<p>Memoriasde mayor capacidad son los llamados <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>, diseñados explícitamente para reemplazar los <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a>. Los <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> se comparan favorablemente con los discos duros en su resistencia a las vibraciones y golpes físicos, su funcionamiento silencioso (debido a la ausencia de piezas móviles) y sus tiempos de acceso más bajos. Los <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> siguen siendo más costoso que los discos duros de capacidad comparable y, por lo tanto, todavía se consideran una opción de gama alta al comprar un computador. Los sectores <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> sufren una vida útil más limitada de todas las tecnologías de memoria <em>flash</em> , pero el uso de técnicas de nivelación de desgaste puede reducir el impacto de esto al reubicar bloques de datos frecuentemente modificados en ubicaciones nuevas en el disco.</p>
+<p>Un <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> (ver <a class="reference internal" href="#fig-ssd"><span class="std std-numref">Fig. 11</span></a>) no contiene muchas partes únicas y la diferenciación de ellos entre los diferentes fabricantes a menudo ocurre en el controlador y el <em>firmware</em>. A continuación se presenta una breve descripción los componentes principales de un <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> <a class="bibtex reference internal" href="#noauthor-ssd-2010" id="id5">[1]</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Firmware</em> es una tipo específico de <em>software</em> que proporciona el control de bajo nivel para el <em>hardware</em> específico de un dispositivo. Puede proporcionar un entorno operativo estandarizado para un software de dispositivo o actuar como el sistema operativo completo del dispositivo, realizando todas las funciones de control, monitoreo y manipulación de datos.</p>
+</div>
+<ul class="simple">
+<li><p>Controlador del dispositivo, es el <em>software</em> creado por el <a class="reference internal" href="../anexos/acronimos.html#term-OEM"><span class="xref std std-term">OEM</span></a> para ejecutarse en la familia de procesadores <em>host</em> de destino en un sistema operativo y sistema de archivos en particular. El controlador del dispositivo proporciona acceso desde el <em>host</em> al producto <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>.</p></li>
+<li><p>Interfaz eléctrica entre el procesador <em>host</em> y el dispositivo periférico <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> , e.g., <a class="reference internal" href="../anexos/acronimos.html#term-SATA"><span class="xref std std-term">SATA</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-USB"><span class="xref std std-term">USB</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-IDE"><span class="xref std std-term">IDE</span></a>.</p></li>
+<li><p>Controlador <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> , componentes electrónicos que proporcionan interfaz de nivel de dispositivo <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a> y ejecución de <em>firmware</em>. Se incluye un procesador integrado, <a class="reference internal" href="../anexos/acronimos.html#term-ROM"><span class="xref std std-term">ROM</span></a> de datos, <a class="reference internal" href="../anexos/acronimos.html#term-RAM"><span class="xref std std-term">RAM</span></a> de datos, interfaz de componentes <em>flash</em> , código de corrección de errores, nivelación de desgaste y características de seguridad.</p></li>
+<li><p>Componentes de memoria flash, dispositivosindividuales que utilizan tecnología NAND o NOR. Las densidades varían entre 2 GB y 64 GB.</p></li>
+<li><p>Componentes de memoria intermedia o caché, componente de memoria <a class="reference internal" href="../anexos/acronimos.html#term-RAM"><span class="xref std std-term">RAM</span></a> de alta velocidad utilizados para la coincidencia de velocidad y para aumentar el rendimiento de datos.</p></li>
+<li><p>Controlador <em>firmware</em>, <em>software</em> escrito y almacenado en memoria para su ejecución por el controlador.</p></li>
+</ul>
+<div class="margin figure align-default" id="fig-sd">
+<a class="reference internal image-reference" href="../_images/flash-sd.png"><img alt="../_images/flash-sd.png" src="../_images/flash-sd.png" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Mini y micro <a class="reference internal" href="../anexos/acronimos.html#term-SD"><span class="xref std std-term">SD</span></a>.</span><a class="headerlink" href="#fig-sd" title="Permalink to this image">¶</a></p>
+</div>
+<div class="margin figure align-default" id="fig-sd-sdhc">
+<a class="reference internal image-reference" href="../_images/flash-sdhc.png"><img alt="../_images/flash-sdhc.png" src="../_images/flash-sdhc.png" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Secure Digital High Capacity (<a class="reference internal" href="../anexos/acronimos.html#term-SDHC"><span class="xref std std-term">SDHC</span></a>).</span><a class="headerlink" href="#fig-sd-sdhc" title="Permalink to this image">¶</a></p>
+</div>
+<div class="margin figure align-default" id="fig-sd-sdxc">
+<a class="reference internal image-reference" href="../_images/flash-sdxc.png"><img alt="../_images/flash-sdxc.png" src="../_images/flash-sdxc.png" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Secure Digital Extended Capacity (<a class="reference internal" href="../anexos/acronimos.html#term-SDXC"><span class="xref std std-term">SDXC</span></a>).</span><a class="headerlink" href="#fig-sd-sdxc" title="Permalink to this image">¶</a></p>
+</div>
+<p>Otra aplicación de la tecnologíase encuentra en las tarjetas de memoria <a class="reference internal" href="../anexos/acronimos.html#term-SD"><span class="xref std std-term">SD</span></a>. Estos proporcionan hasta 2 GB de almacenamiento y están empaquetados en plástico con el tamaño aproximado de una estampilla, también se encuentran disponibles en tamaños mini y micro <a class="reference internal" href="../anexos/acronimos.html#term-SD"><span class="xref std std-term">SD</span></a>. Las tarjetas de memoria <a class="reference internal" href="../anexos/acronimos.html#term-SDHC"><span class="xref std std-term">SDHC</span></a> pueden proporcionar hasta 32 GB y la tarjetas de memoria <a class="reference internal" href="../anexos/acronimos.html#term-SDXC"><span class="xref std std-term">SDXC</span></a> puede superar 1 TB. Dado su tamaño físico compacto, estas tarjetas se deslizan convenientemente en ranuras de pequeños dispositivos electrónicos. En general, son usados en cámaras digitales, <em>smartphones</em>, GPS, entre otros dispositivos electrónicos.</p>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografia<a class="headerlink" href="#bibliografia" title="Permalink to this headline">¶</a></h2>
+<p id="bibtex-bibliography-almacenamiento-digital/almacenamiento-masivo-0"><dl class="citation">
+<dt class="bibtex label" id="noauthor-ssd-2010"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
+<dd><p>SSD Components. April 2010. URL: <a class="reference external" href="https://www.storagereview.com/ssd-components">https://www.storagereview.com/ssd-components</a> (visited on 2020-12-13).</p>
+</dd>
+<dt class="bibtex label" id="mielke-reliability-2017"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Neal R Mielke, Robert E Frickey, Ivan Kalastirsky, Minyan Quan, Dmitry Ustinov, and Venkatesh J Vasudevan. Reliability of Solid-State Drives Based on NAND Flash Memory. In <em>Proceedings of the IEEE</em>, 1725–1750. 2017. <a class="reference external" href="https://doi.org/10.1109/JPROC.2017.2725738">doi:10.1109/JPROC.2017.2725738</a>.</p>
+</dd>
+<dt class="bibtex label" id="oreilly-why-2017"><span class="brackets"><a class="fn-backref" href="#id1">3</a></span></dt>
+<dd><p>James O’Reilly. Why Storage Matters. In <em>Network Storage</em>, pages 1–5. Elsevier, 2017. <a class="reference external" href="https://doi.org/10.1016/B978-0-12-803863-5.00001-7">doi:10.1016/B978-0-12-803863-5.00001-7</a>.</p>
+</dd>
+<dt class="bibtex label" id="stan-cd-rom-1998"><span class="brackets"><a class="fn-backref" href="#id3">4</a></span></dt>
+<dd><p>Sorin G Stan. <em>The CD-ROM Drive</em>. Springer US, Boston, MA, 1998. ISBN 978-1-4419-5039-0. <a class="reference external" href="https://doi.org/10.1007/978-1-4757-2843-9">doi:10.1007/978-1-4757-2843-9</a>.</p>
+</dd>
+<dt class="bibtex label" id="von-guide-2019"><span class="brackets"><a class="fn-backref" href="#id4">5</a></span></dt>
+<dd><p>Atko Von. Guide For Different Types Of Optical Drives. June 2019. URL: <a class="reference external" href="https://tenpire.com/guide-for-different-types-of-optical-drives/">https://tenpire.com/guide-for-different-types-of-optical-drives/</a> (visited on 2020-02-04).</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./almacenamiento-digital"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="memoria-principal.html" title="previous page">Memoria principal</a>
+    <a class='right-next' id="next-link" href="representacion-de-la-informacion.html" title="next page">Representación de la información</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
