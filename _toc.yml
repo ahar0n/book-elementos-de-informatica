@@ -5,11 +5,11 @@
 
 - part: Almacenamiento de datos
   chapters:
-    - file: almacenamiento-digital/digitos-binarios
-    - file: almacenamiento-digital/memoria-principal
-    - file: almacenamiento-digital/almacenamiento-masivo
-    - file: almacenamiento-digital/representacion-de-la-informacion
-    - file: almacenamiento-digital/ejercicios
+    - file: almacenamiento-de-datos/digitos-binarios
+    - file: almacenamiento-de-datos/memoria-principal
+    - file: almacenamiento-de-datos/almacenamiento-masivo
+    - file: almacenamiento-de-datos/representacion-de-la-informacion
+    - file: almacenamiento-de-datos/ejercicios
 
 - part: Anexos
   chapters:
