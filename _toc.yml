@@ -1,0 +1,16 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: prefacio
+
+- part: Almacenamiento de datos
+  chapters:
+    - file: almacenamiento-digital/digitos-binarios
+    - file: almacenamiento-digital/memoria-principal
+    - file: almacenamiento-digital/almacenamiento-masivo
+    - file: almacenamiento-digital/representacion-de-la-informacion
+    - file: almacenamiento-digital/ejercicios
+
+- part: Anexos
+  chapters:
+    - file: anexos/acronimos
