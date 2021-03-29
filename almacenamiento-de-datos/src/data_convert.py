@@ -31,3 +31,12 @@ def word2charlist(word):
     for i in word:
         chars.append(i)
     return chars
+
+def bin2dec(x):
+    suma = 0
+    exp = 0
+    while len(x) > 0:
+        suma += int(x[-1]) * (2**exp)
+        x = x[0:-1]
+        exp += 1
+    return suma

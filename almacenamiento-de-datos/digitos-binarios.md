@@ -60,7 +60,7 @@ Entradas y salidas de operaciones booleanas.
 
 ## Notación hexadecimal
 
-Las actividades internas de una computadora operan con patrones de _bits_, algunos de los cuales puedes contener varios dígitos, por ejemplo, `1011 0100 1000`. Debido a la complejidad en la comprensión de estas cadenas de dígitos, su representa se simplifica por medio de la notación hexadecimal.
+Las actividades internas de una computadora operan con patrones de _bits_, algunos de los cuales puedes contener varios dígitos, por ejemplo, `1011 0100 1000`. Debido a la complejidad en la comprensión de estas cadenas de dígitos, su representación se simplifica por medio de la notación hexadecimal.
 
 La notación hexadecimal utiliza un símbolo para representar un patrón de cuatro _bits_. Así por ejemplo, una cadena de doce _bits_ puede ser representada por tres símbolos hexadecimales. En la siguiente tabla, la columna de la izquierda reproduce todos los patrones de _bits_ posibles de longitud cuatro; la columna de la derecha muestra el símbolo utilizado en notación hexadecimal para representar el patrón de _bits_ a su izquierda.
 

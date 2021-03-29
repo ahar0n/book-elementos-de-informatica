@@ -70,10 +70,10 @@ glue('msg-binary', msg)
     % Solución:
     %   capacidad de cámara en bits es 500 * 2^20 = 524 288 000 bytes o 512 MB
     %   tamaño en bits de cada fotografías es 512*512 pixeles = 262 144 bits o 246 bytes
-    %   cantidad de fotografía es (500*2^20)bytes / (512*512/8)bytes = 16 000
+    %   cantidad de fotografía es (500*2^20) bytes / (512*512 bits /8)bytes = 16 000
 1. Suponga que una imagen está representada en una pantalla de visualización por una matriz cuadrada que contiene 256 x 256 píxeles (columnas por filas). Si para cada píxel se requieren 3 _bytes_ para codificar el color y 8 _bits_ para codificar la intensidad, ¿cuánta memoria (en _bytes_) se requieren para contener la imagen completa?
     % Solución
     %   La imagen de 256x256 (65 536) px requiere de 4 bytes (3 bytes + 8 bits) de memoria por píxel.
     %   Para su visualización se requieren una memoria de 256*256*4 = 262 144 bytes o 256*256*4 / 2^10 = 256 KiB.
 1. Suponga que desea crear una copia de seguridad de sus datos de alrededor de 10 GB. ¿Qué medio de almacenamiento basado en un sistema óptico sería razonable utilizar? 
-    % Bluray  
+    % Blu-ray  

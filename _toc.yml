@@ -9,7 +9,6 @@
     - file: almacenamiento-de-datos/memoria-principal
     - file: almacenamiento-de-datos/almacenamiento-masivo
     - file: almacenamiento-de-datos/representacion-de-la-informacion
-    - file: almacenamiento-de-datos/ejercicios
 
 - part: Anexos
   chapters:
