@@ -9,6 +9,11 @@
     - file: almacenamiento-de-datos/memoria-principal
     - file: almacenamiento-de-datos/almacenamiento-masivo
     - file: almacenamiento-de-datos/representacion-de-la-informacion
+- part: Manipulación de datos
+  chapters:
+    - file: manipulacion-de-datos/organizacion-de-un-computador
+    - file: manipulacion-de-datos/ejecucion-de-un-programa
+    - file: manipulacion-de-datos/comunicacion-con-perifericos
 
 - part: Anexos
   chapters:

@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejecución de un programa &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Comunicación con periféricos" href="comunicacion-con-perifericos.html" />
+    <link rel="prev" title="Organización de un computador" href="organizacion-de-un-computador.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Ejecución de un programa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="comunicacion-con-perifericos.html">
+   Comunicación con periféricos
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/manipulacion-de-datos/ejecucion-de-un-programa.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lenguaje-maquina">
+   Lenguaje máquina
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rendimiento-de-una-cpu">
+   Rendimiento de una CPU
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="ejecucion-de-un-programa">
+<span id="content-ejecucion-de-un-programa"></span><h1>Ejecución de un programa<a class="headerlink" href="#ejecucion-de-un-programa" title="Permalink to this headline">¶</a></h1>
+<p>Una computadora ejecuta un programa almacenado en su memoria copiando las instrucciones desde la memoria a la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> según sea necesario. Una vez en la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>, cada instrucción es decodificada y seguida. El orden en el que se obtienen las instrucciones de la memoria corresponde al orden en el que se almacenan en la memoria.</p>
+<div class="figure align-center" id="fig-registros-cpu">
+<a class="reference internal image-reference" href="../_images/registros-especiales.png"><img alt="../_images/registros-especiales.png" src="../_images/registros-especiales.png" style="height: 230px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Registros de propósito especial de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>.</span><a class="headerlink" href="#fig-registros-cpu" title="Permalink to this image">¶</a></p>
+</div>
+<p>Para comprender cómo se lleva a cabo el proceso de ejecución general, es necesario considerar dos de los registros de propósito especial dentro de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>: el registro de instrucción y el contador de programa (ver <a class="reference internal" href="#fig-registros-cpu"><span class="std std-numref">Fig. 24</span></a>). El registro de instrucciones se utiliza para mantener la instrucción que se está ejecutando. El contador de programa contiene la dirección de la siguiente instrucción que se ejecutará, por lo que sirve como la forma en que la máquina realiza un seguimiento de dónde se encuentra en el programa.
+La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> realiza su trabajo repitiendo continuamente un algoritmo que la guía a través de un proceso de tres pasos conocido como ciclo de la máquina.</p>
+<div class="figure align-center" id="fig-ciclo-maquina">
+<a class="reference internal image-reference" href="../_images/ciclo_maquina.png"><img alt="../_images/ciclo_maquina.png" src="../_images/ciclo_maquina.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">El ciclo máquina.</span><a class="headerlink" href="#fig-ciclo-maquina" title="Permalink to this image">¶</a></p>
+</div>
+<p>Los pasos del ciclo de la máquina son recuperar, decodificar y ejecutar (<a class="reference internal" href="#fig-ciclo-maquina"><span class="std std-numref">Fig. 25</span></a>). Durante el paso de recuperar, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> solicita a la memoria principal la instrucción que está almacenada en la dirección indicada en el contador del programa. La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> coloca la instrucción recibida de la memoria en su registro de instrucciones y luego incrementa el contador del programa para que el contador contenga la dirección de la siguiente instrucción almacenada en la memoria. Por lo tanto, el contador del programa estará listo para la siguiente recuperación.</p>
+<p>Con la instrucción en el registro de instrucciones, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> decodifica la instrucción, luego ejecuta la instrucción activando los circuitos apropiados para realizar la tarea solicitada. Por ejemplo, si la instrucción es una carga de la memoria, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>  envía las señales apropiadas a la memoria principal, espera a que la memoria principal envíe los datos y luego coloca los datos en el registro solicitado. Si la instrucción es para una operación aritmética, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> activa el circuito apropiado en la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> con los registros correctos como entradas y espera a que la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> calcule la respuesta y la coloque en el registro apropiado.</p>
+<p>Una vez que se ha ejecutado la instrucción en el registro de instrucciones, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> comienza nuevamente el ciclo de la máquina desde el primer paso. Debido que el contador del programa se incrementó al final de la recuperación anterior, nuevamente proporciona a la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> la dirección correcta.</p>
+<p>A continuación se ejemplifica de la ejecución de un programa. <a class="bibtex reference internal" href="#brookshear-computer-2015" id="id1">[1]</a> Suponga que el programa se encuentra almacenado en la memoria principal, en direcciones consecutivas, comenzando en la dirección A0 (hexadecimal). La máquina lo ejecute colocando la dirección (A0) de la primera instrucción en el contador del programa (<a class="reference internal" href="#fig-programa-memoria"><span class="std std-numref">Fig. 26</span></a>).</p>
+<div class="figure align-center" id="fig-programa-memoria">
+<a class="reference internal image-reference" href="../_images/programa-en-memoria.png"><img alt="../_images/programa-en-memoria.png" src="../_images/programa-en-memoria.png" style="height: 260px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">El ciclo máquina.</span><a class="headerlink" href="#fig-programa-memoria" title="Permalink to this image">¶</a></p>
+</div>
+<p>La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> comienza el ciclo máquina recuperando la instrucción almacenada en la ubicación A0 de la memoria principal y colocando esta instrucción (156C) en su registro de instrucciones (<a class="reference internal" href="#fig-programa-recuperacion"><span class="std std-numref">Fig. 27</span></a>). Notar que en esta máquina las instrucciones tienen una longitud de 16 <em>bits</em> (dos <em>bytes</em>). Por lo tanto, la instrucción completa que se recuperar ocupa las celdas de memoria en las direcciones A0 y A1. La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> está diseñada para tener esto en cuenta, por lo que recupera el contenido de ambas celdas y coloca los patrones de <em>bits</em> en el registro de instrucciones, el cual tiene una longitud de 16 <em>bits</em>. Luego, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> agrega dos al contador del programa para que este registro contenga la dirección de la siguiente instrucción (<a class="reference internal" href="#fig-programa-incremento"><span class="std std-numref">Fig. 28</span></a>). Al final del paso de recuperación del primer ciclo de la máquina, el contador del programa contiene A2 y el registro de instrucciones contienen 156C.</p>
+<div class="figure align-center" id="fig-programa-recuperacion">
+<a class="reference internal image-reference" href="../_images/programa-recuperacion.png"><img alt="../_images/programa-recuperacion.png" src="../_images/programa-recuperacion.png" style="height: 280px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Recuperación de instrucción desde la memoria principal.</span><a class="headerlink" href="#fig-programa-recuperacion" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="fig-programa-incremento">
+<a class="reference internal image-reference" href="../_images/programa-incremento.png"><img alt="../_images/programa-incremento.png" src="../_images/programa-incremento.png" style="height: 280px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Incremento del contador que apunta a la instrucción siguiente.</span><a class="headerlink" href="#fig-programa-incremento" title="Permalink to this image">¶</a></p>
+</div>
+<p>A continuación, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> analiza la instrucción en su registro de instrucciones y ejecuta las acciones obtenidas de la instrucción. Esta actividad se realiza durante el paso de ejecución del ciclo de la máquina, y luego la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> comienza el siguiente ciclo. Este ciclo comienza obteniendo la instrucción 166D de las dos celdas de memoria que comienzan en la dirección A2. La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> coloca esta instrucción en el registro de instrucciones e incrementa el contador del programa a A4. Por lo tanto, los valores en el contador de programa contiene A4 y el registro de instrucciones contiene 166D. Este proceso se repite hasta que se ejecutan todas las instrucciones del programa almacenado.</p>
+<div class="section" id="lenguaje-maquina">
+<h2>Lenguaje máquina<a class="headerlink" href="#lenguaje-maquina" title="Permalink to this headline">¶</a></h2>
+<p>Para aplicar el concepto de programa almacenado, las <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> están diseñadas para reconocer instrucciones codificadas como patrones de <em>bits</em>. Esta colección de instrucciones junto con el sistema de codificación se denomina lenguaje máquina.</p>
+<p>La lista de instrucciones máquina que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> típica debe poder decodificar y ejecutar es bastante corta. De hecho, una vez que una máquina puede realizar ciertas tareas elementales pero bien elegidas, agregar más funciones no aumenta las capacidades teóricas de la máquina.</p>
+<p>El grado en que los diseños de máquinas deben aprovechar este hecho ha llevado a dos filosofías de la arquitectura de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>. Una es que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> debe diseñarse para ejecutar un conjunto mínimo de instrucciones de máquina. Este enfoque conduce a lo que se llama una computadora de conjunto de instrucciones reducido (<a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> - <em>reduced instruction set computer</em>). El argumento a favor de la arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> es que dicha máquina es eficiente, rápida y menos costosa de fabricar. Por otro lado, otros argumentan a favor de las <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> con la capacidad de ejecutar una gran cantidad de instrucciones complejas, aunque muchas de ellas son técnicamente redundantes. El resultado de este enfoque se conoce como computadora de conjunto de instrucciones complejas (<a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> - <em>complex instruction set computer</em>). El argumento a favor de la arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> es que la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> más compleja puede hacer frente mejor a las complejidades cada vez mayores del software actual. Con <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>, los programas pueden explotar un poderoso y rico conjunto de instrucciones, muchas de las cuales requerirían una secuencia de múltiples instrucciones en un diseño <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a>. En la década de 1990 y en el nuevo milenio, los procesadores <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> y <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> disponibles comercialmente competían activamente por el dominio en la computación de escritorio. Los procesadores Intel, utilizados en PC, son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>. Los procesadores PowerPC (desarrollados por una alianza entre Apple, IBM y Motorola) son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> y se utilizaron en Apple Macintosh. A medida que pasaba el tiempo, el costo de fabricación de <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> se redujo drásticamente; por lo tanto, los procesadores de Intel (o su equivalente de AMD — Advanced Micro Devices, Inc.) ahora se encuentran en prácticamente todas los computadores de escritorio y portátiles.
+Si bien <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> aseguró su lugar en los computadores de escritorio, tienen un alto consumo energético. Por el contrario, la empresa Advanced RISC Machine (ARM) ha diseñado una arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> específicamente para un bajo consumo de energía. Por lo tanto, los procesadores basados ​​en ARM, fabricados por una gran cantidad de proveedores, incluidos Qualcomm y Texas Instruments, se encuentran en controladores de juegos, televisores digitales, sistemas de navegación, módulos automotrices, celulares. teléfonos, teléfonos inteligentes y otros productos electrónicos de consumo.</p>
+<p>Independientemente de la arquitectura, <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> o <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>, las instrucciones máquina se pueden clasificar en tres grupos:</p>
+<ol class="simple">
+<li><p><strong>Grupo de transferencia de datos</strong> consta de instrucciones que solicitan el movimiento de datos de una ubicación a otra.</p></li>
+<li><p><strong>Grupo aritmético/lógico</strong> consta de las instrucciones que le dicen a la unidad de control que solicite una actividad dentro de la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a>, tales como, operaciones aritméticas básicas y las operaciones booleanas AND, OR y XOR.</p></li>
+<li><p><strong>Grupo de control</strong> consta de aquellas instrucciones que dirigen la ejecución del programa en lugar de la manipulación de datos. Por ejemplo, saltos incondicionales (de una instrucción a otra) y saltos condicionales (a partir del cumplimiento o no de una condición).</p></li>
+</ol>
+</div>
+<div class="section" id="rendimiento-de-una-cpu">
+<h2>Rendimiento de una CPU<a class="headerlink" href="#rendimiento-de-una-cpu" title="Permalink to this headline">¶</a></h2>
+<p>El reloj de una computadora es un circuito, llamado oscilador, que genera pulsos que se utilizan para coordinar las actividades de la máquina; cuanto más rápido genera pulsos este circuito oscilante, más rápido realiza la máquina su ciclo de máquina. Las velocidades del reloj se miden en hercios (abreviado como Hz) con 1 Hz igual a un ciclo (o pulso) por segundo. Las velocidades de reloj típicas en las computadoras de escritorio están en el rango de unos pocos cientos de MHz (megahertz, que es un millón de Hz) para modelos más antiguos, a varios GHz (gigahertz, que es 1000 MHz).</p>
+<p>Desafortunadamente, diferentes diseños de CPU pueden realizar diferentes cantidades de trabajo en un ciclo de reloj y, por lo tanto, la velocidad del reloj por sí sola no es relevante al comparar máquinas con diferentes CPU. Si está comparando una máquina basada en un procesador Intel con una basada en ARM, sería más significativo comparar el rendimiento mediante la evaluación comparativa, que es el proceso de comparar el rendimiento de diferentes máquinas al ejecutar el mismo programa, conocido como <em>benchmark</em>. Al seleccionar puntos de referencia que representan diferentes tipos de aplicaciones, se obtiene comparaciones significativas para varios segmentos del mercado. (por ejemplo, <a class="reference external" href="https://www.profesionalreview.com/2020/04/05/procesadores-intel-vs-amd-ryzen/">Comparativa de rendimiento: Intel vs AMD Ryzen</a>)</p>
+<p id="bibtex-bibliography-manipulacion-de-datos/ejecucion-de-un-programa-0"><dl class="citation">
+<dt class="bibtex label" id="brookshear-computer-2015"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>J Glenn Brookshear and Dennis Brylow. <em>Computer Science: An Overview</em>. Pearson, Harlow, England, 12th edition, March 2015. ISBN 978-1-292-06116-0.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./manipulacion-de-datos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="organizacion-de-un-computador.html" title="previous page">Organización de un computador</a>
+    <a class='right-next' id="next-link" href="comunicacion-con-perifericos.html" title="next page">Comunicación con periféricos</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunicación entre componentes &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Ejecución de un programa" href="ejecucion-de-un-programa.html" />
+    <link rel="prev" title="Organización de un computador" href="organizacion-de-un-computador.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Comunicación entre componentes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ejecucion-de-un-programa.html">
+   Ejecución de un programa
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/manipulacion-de-datos/comunicacion-entre-componentes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="comunicacion-entre-componentes">
+<h1>Comunicación entre componentes<a class="headerlink" href="#comunicacion-entre-componentes" title="Permalink to this headline">¶</a></h1>
+<p>Aunque el modelo de Von Neumann prevalece en las computadoras modernas, se ha simplificado. La Figura 1-3 muestra el modelo de bus del sistema de un sistema informático. Este modelo divide un sistema informático en tres subunidades: CPU, memoria y entrada / salida (E / S). Este refinamiento del modelo von Neumann combina la ALU y la unidad de control en una unidad funcional, la CPU. Las unidades de entrada y salida también se combinan en una sola unidad de E / S.</p>
+<p>Lo más importante para el modelo de bus del sistema, las comunicaciones entre los componentes son por medio de una vía compartida llamada bus del sistema, que está compuesto por el bus de datos (que lleva la información que se transmite), el bus de direcciones (que identifica dónde se envía la información) y el bus de control (que describe aspectos de cómo se envía la información y de qué manera). También hay un bus de potencia para la alimentación eléctrica de los componentes, que no se muestra, pero se entiende su presencia. Algunas arquitecturas también pueden tener un bus de E / S independiente.</p>
+<p>Físicamente, los buses están formados por conjuntos de cables agrupados por función. Un bus de datos de 32 bits tiene 32 cables individuales, cada uno de los cuales transporta un bit de datos (a diferencia de la dirección o la información de control). En este sentido, el bus del sistema es en realidad un grupo de buses individuales clasificados por su función.</p>
+<p>El bus de datos mueve datos entre los componentes del sistema. Algunos sistemas tienen buses de datos separados para mover información hacia y desde la CPU, en cuyo caso hay un bus de entrada de datos y un bus de salida de datos. Más a menudo, un solo bus de datos mueve datos en cualquier dirección, aunque nunca en ambas direcciones al mismo tiempo.</p>
+<p>Si el bus se va a compartir entre entidades comunicantes, las entidades deben tener identidades distinguidas: direcciones. En algunas computadoras, se asume que todas las direcciones son direcciones de memoria, ya sea que de hecho formen parte de la memoria de la computadora o que sean en realidad dispositivos de E / S, mientras que en otras, los dispositivos de E / S tienen direcciones de E / S separadas. (Este tema de direcciones de E / S se trata con más detalle en el Capítulo 8, Entrada, salida y comunicación).</p>
+<p>Una dirección de memoria, o ubicación, identifica una ubicación de memoria donde se almacenan los datos, de manera similar a la forma en que una dirección postal identifica la ubicación donde un destinatario recibe y envía correo. Durante una operación de lectura o escritura de la memoria, el bus de direcciones contiene la dirección de la ubicación de la memoria donde se leerán o escribirán los datos. Tenga en cuenta que los términos “leer” y “escribir” se refieren a la CPU: la CPU lee datos de la memoria y escribe datos en la memoria. Si los datos se van a leer de la memoria, el bus de datos contiene el valor leído de esa dirección en la memoria. Si los datos se van a escribir en la memoria, el bus de datos contiene el valor de los datos que se van a escribir en la memoria.</p>
+<p>El bus de control es algo más complejo y aplazamos la discusión de este bus para capítulos posteriores. Por ahora, se puede pensar en el bus de control como coordinando el acceso al bus de datos y al bus de direcciones, y dirigiendo los datos a componentes específicos.</p>
+<p id="bibtex-bibliography-manipulacion-de-datos/comunicacion-entre-componentes-0"></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./manipulacion-de-datos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="organizacion-de-un-computador.html" title="previous page">Organización de un computador</a>
+    <a class='right-next' id="next-link" href="ejecucion-de-un-programa.html" title="next page">Ejecución de un programa</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

@@ -9,7 +9,7 @@ ASCII
     _American Standard Code for Information Interchange_
 
 ALU
-    _Arithmetic-Logic Unit_
+    _Arithmetic/Logic Unit_
 
 ABI
     _Application Binary Interface_
@@ -73,6 +73,9 @@ CASE
 
 CMMI
     _Capability Maturity Model Integration_
+
+CISC
+    _Complex Instruction Set Computer_
 
 CD-DA
     _Compact disk-digital audio_
@@ -292,6 +295,9 @@ ROM
 
 RAID
     _Redundant Array of Independent Disks_
+
+RISC
+    _Reduced Instruction Set Computer_
 
 SSD
     _Solid-state Disk_
