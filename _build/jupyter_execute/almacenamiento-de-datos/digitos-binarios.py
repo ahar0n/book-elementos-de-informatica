@@ -4,22 +4,23 @@ Los computadores son capaces de representar cualquier información que pueda ser
 
 Los patrones de _bits_ pueden representar valores numéricos, caracteres de un alfabeto, signos de puntuación, imágenes y otras veces representan sonidos. Por conveniencia, el _bit_ `0` representa el valor `False` y el _bit_ `1` representa el valor `True`.
 
-La tasa de transferencia de datos en redes de computadoras se conoce como tasa de _bits_ o ancho de banda, y generalmente se mide en términos de un múltiplo de _bits_ por segundo ({term}`bps`).
+La tasa de transferencia de datos en redes de computadores se conoce como tasa de _bits_ o ancho de banda, y generalmente se mide en términos de un múltiplo de _bits_ por segundo ({term}`bps`).
 
 El _bit_ también se utiliza como una unidad para medir la capacidad de procesadores como las {term}`CPU` que tratan datos en fragmentos de 32 _bits_ (por ejemplo, procesadores con registros de 32 _bits_ y direcciones de memoria de 32 _bits_) y fragmentos de 64 _bits_. 
 
+(content:operaciones-booleanas)=
 ## Operaciones booleanas
 
-Los operadores booleanos permiten manipular _bits_. Las operaciones `and`, `or`, y `xor` (`or` exclusivo) son operaciones binarias debido a que combinan dos valores (entradas) para producir un tercer valor (salida). La operación `not` se diferencia de las anteriores porque es unaria, es decir, solo requiere una entrada.
+Los operadores booleanos permiten manipular _bits_. Las operaciones `AND`, `OR`, y `XOR` (`OR` exclusivo) son operaciones binarias debido a que combinan dos valores (entradas) para producir un tercer valor (salida). La operación `NOT` se diferencia de las anteriores porque es unaria, es decir, solo requiere una entrada.
 
 ```{note}
 Los operadores booleanos son denominados así en honor al matemático [George Boole](https://www.biografiasyvidas.com/biografia/b/boole.htm) (1815-1864), que fue un pionero en el campo de la lógica.
 ```
 
-- **`and`**, produce una salida verdadera o falsa de una declaración formada por la combinación de dos declaraciones más pequeñas o más simples.
-- **`or`**, produce un estado verdadero cuando al menos uno de sus componentes es verdadero.
-- **`xor`**, produce una salida verdadera cuando sus entradas son dos valores diferentes.
-- **`not`**, produce una salida que es de valor opuesto a su entrada. Por lo tanto, representa la negación de una entrada.
+- **`AND`**, produce una salida verdadera o falsa de una declaración formada por la combinación de dos declaraciones más pequeñas o más simples.
+- **`OR`**, produce un estado verdadero cuando al menos uno de sus componentes es verdadero.
+- **`XOR`**, produce una salida verdadera cuando sus entradas son dos valores diferentes.
+- **`NOT`**, produce una salida que es de valor opuesto a su entrada. Por lo tanto, representa la negación de una entrada.
 
 Las posibles entradas y valores de salidas de las operaciones booleandas son presentados en la siguiente tabla.
 
@@ -30,10 +31,10 @@ booleanas = pd.DataFrame({
     'P': [False, False, True, True,], 
     'Q': [False, True, False, True]
     })
-booleanas['P and Q'] = booleanas['P'] & booleanas['Q']
-booleanas['P or Q'] = booleanas['P'] | booleanas['Q']
-booleanas['P xor Q'] = booleanas['P'] != booleanas['Q']
-booleanas['not P'] = ~ booleanas['P']
+booleanas['P AND Q'] = booleanas['P'] & booleanas['Q']
+booleanas['P OR Q'] = booleanas['P'] | booleanas['Q']
+booleanas['P XOR Q'] = booleanas['P'] != booleanas['Q']
+booleanas['NOT P'] = ~ booleanas['P']
 glue('tab-booleanas', booleanas.style.hide_index())
 
 ```{glue:figure} tab-booleanas
@@ -44,7 +45,7 @@ Entradas y salidas de operaciones booleanas.
 
 ## Notación hexadecimal
 
-Las actividades internas de una computadora operan con patrones de _bits_, algunos de los cuales puedes contener varios dígitos, por ejemplo, `1011 0100 1000`. Debido a la complejidad en la comprensión de estas cadenas de dígitos, su representación se simplifica por medio de la notación hexadecimal.
+Las actividades internas de un computador operan con patrones de _bits_, algunos de los cuales puedes contener varios dígitos, por ejemplo, `1011 0100 1000`. Debido a la complejidad en la comprensión de estas cadenas de dígitos, su representación se simplifica por medio de la notación hexadecimal.
 
 La notación hexadecimal utiliza un símbolo para representar un patrón de cuatro _bits_. Así por ejemplo, una cadena de doce _bits_ puede ser representada por tres símbolos hexadecimales. En la siguiente tabla, la columna de la izquierda reproduce todos los patrones de _bits_ posibles de longitud cuatro; la columna de la derecha muestra el símbolo utilizado en notación hexadecimal para representar el patrón de _bits_ a su izquierda.
 

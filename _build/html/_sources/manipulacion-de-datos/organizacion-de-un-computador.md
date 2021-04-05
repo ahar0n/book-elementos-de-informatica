@@ -1,6 +1,6 @@
 # Organización de un computador
 
-Como ocurre con cualquier sistema complejo, un computador puede ser visto desde diferentes perspectivas {cite}`murdocca_principles_1999`, desde el nivel más alto de usuario hasta el nivel más bajo de transistores (ver {numref}`fig-perspectivas-pc`). Cada uno de estos niveles representa una abstracción del computador, los cuales son independientes entre sí. Por ejemplo, un usuario que ejecuta un programa de procesamiento de texto en una computador no necesita saber nada sobre la programación de este _software_. Asimismo, un programador, que requiere tratar con aspectos tales como el tamaño de los tipos de datos (por ejemplo, usar 16 dígitos binarios para representar un número entero) y los tipos de operaciones que son compatibles (como sumar, restar y llamar a subrutinas), no necesita preocuparse por la estructura de la puerta lógica dentro de la computadora.
+Como ocurre con cualquier sistema complejo, un computador puede ser visto desde diferentes perspectivas {cite}`murdocca_principles_1999`, desde el nivel más alto de usuario hasta el nivel más bajo de transistores (ver {numref}`fig-perspectivas-pc`). Cada uno de estos niveles representa una abstracción del computador, los cuales son independientes entre sí. Por ejemplo, un usuario que ejecuta un programa de procesamiento de texto en un computador no necesita saber nada sobre la programación de este _software_. Asimismo, un programador, que requiere tratar con aspectos tales como el tamaño de los tipos de datos (por ejemplo, usar 16 dígitos binarios para representar un número entero) y los tipos de operaciones que son compatibles (como sumar, restar y llamar a subrutinas), no necesita preocuparse por la estructura de la puerta lógica dentro del computador.
 
 ```{figure} ../images/perspectivas-arquitectura-pc.png
 :height: 180px
@@ -28,7 +28,7 @@ El concepto de programa almacenado es el aspecto más importante del modelo de v
 
 ## Computador típico
 
-Los computadores modernos han evolucionado desde las gigantes máquinas de las décadas de 1950 y 1960 hasta las computadoras mucho más pequeñas y poderosas de hoy.
+Los computadores modernos han evolucionado desde las gigantes máquinas de las décadas de 1950 y 1960 hasta los computadores mucho más pequeños y poderosos de hoy.
 
 ```{note}
 Puedes revisar la [línea de tiempo de la historia de la computación](https://www.computerhistory.org/timeline/computers/).
@@ -36,7 +36,7 @@ Puedes revisar la [línea de tiempo de la historia de la computación](https://w
 
 La {numref}`fig-laptop` muestra una configuración típica de un computador de sobremesa o notebook. La unidad de entrada está compuesta por el teclado y el touchpad, a través de los cual el usuario ingresa datos, instrucción y/o comandos. La pantalla y los altavoces corresponden a unidades de salida, que representan las salidas de forma visual y auditiva, respectivamente. La {term}`ALU` y la Unidad de Control están agrupadas en el procesador, el que esta incluido en la placa base. La unidad de memoria consta de circuitos de memoria individuales ({term}`RAM`), como también, de una unidad de almacenamiento secundarios ({term}`SSD`).
 
-```{figure} ../images/laptop-partes.png
+```{figure} ../images/laptop.png
 :height: 560px
 :align: center
 :name: fig-laptop
@@ -87,7 +87,7 @@ Físicamente, los buses están formados por conjuntos de cables agrupados por fu
 
 El bus de datos mueve datos entre los componentes del sistema. Algunos sistemas tienen buses de datos separados para mover información hacia y desde la {term}`CPU`, en cuyo caso hay un bus de entrada de datos y un bus de salida de datos. Habitualmente, un bus de datos solo mueve datos en cualquier dirección, aunque nunca en ambas direcciones al mismo tiempo.
 
-Si el bus se va a compartir entre entidades que se comunican, las entidades deben tener identidades distinguidas: direcciones. En algunos computadores, se asume que todas las direcciones son direcciones de memoria, ya sea que que formen parte de la memoria de la computadora o que sean dispositivos de E/S, mientras que en otros, los dispositivos de E/S tienen direcciones de E/S separadas.
+Si el bus se va a compartir entre entidades que se comunican, las entidades deben tener identidades distinguidas: direcciones. En algunos computadores, se asume que todas las direcciones son direcciones de memoria, ya sea que que formen parte de la memoria del computador o que sean dispositivos de E/S, mientras que en otros, los dispositivos de E/S tienen direcciones de E/S separadas.
 
 Una dirección de memoria, o ubicación, identifica una ubicación de memoria donde se almacenan los datos, de manera similar a la forma en que una dirección postal identifica la ubicación donde un destinatario recibe y envía correo. Durante una operación de lectura/escritura de la memoria, el bus de direcciones contiene la dirección de la ubicación de la memoria donde se leerán/escribirán los datos.
 
