@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios &#8212; Elementos de Informática</title>
+    <title>Unidad Central de Procesamiento &#8212; Elementos de Informática</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -54,6 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Comunicación entre componentes" href="comunicacion-entre-componentes.html" />
+    <link rel="prev" title="Computador típico" href="computador-tipico.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,22 +97,22 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="digitos-binarios.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
    Dígitos binarios
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="memoria-principal.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
    Memoria principal
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="almacenamiento-masivo.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
    Almacenamiento masivo
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="representacion-de-la-informacion.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
    Representación de la información
   </a>
  </li>
@@ -120,20 +122,40 @@
   Manipulación de datos
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
-   Organización de un computador
+  <a class="reference internal" href="arquitectura-de-un-computador.html">
+   Arquitectura de un computador
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+  <a class="reference internal" href="arquitectura-de-un-computador.html#lenguaje-maquina">
+   Lenguaje máquina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="arquitectura-de-un-computador.html#ejecucion-de-un-programa">
    Ejecución de un programa
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
-   Comunicación con periféricos
+  <a class="reference internal" href="modelo-de-von-neumann.html">
+   Modelo de von Neumann
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="computador-tipico.html">
+   Computador típico
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Unidad Central de Procesamiento
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="comunicacion-entre-componentes.html">
+   Comunicación entre componentes
   </a>
  </li>
 </ul>
@@ -186,12 +208,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/almacenamiento-de-datos/ejercicios.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/almacenamiento-de-datos/ejercicios.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/manipulacion-de-datos/cpu.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -223,59 +242,20 @@
         
               <div>
                 
-  <div class="section" id="ejercicios">
-<h1>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>¿Cuál es el valor del <em>bit</em> menos significativo en los patrones de <em>bits</em> representados por las siguientes notaciones hexadecimales?</p>
-<ul class="simple">
-<li><p>9A</p></li>
-<li><p>1B</p></li>
-<li><p>6E</p></li>
-</ul>
-</li>
-<li><p>¿Qué mejora se obtiene aumentando la velocidad de rotación de un disco o CD?</p></li>
-<li><p>¿Qué factores permiten que todos los discos <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a> y Blu-ray sean leídos por una misma unidad?</p></li>
-<li><p>¿Qué ventajas proporcionan las memoriasen comparación con los otros sistemas de almacenamiento masivo?</p></li>
-<li><p>¿Qué características de las unidades de <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> hacen que sigan siendo competitivas?</p></li>
-<li><p>El siguiente código muestra un mensaje codificado en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> utilizando 8 <em>bits</em> por símbolo. Interprete lo que dice.
-<span class="pasted-text">01000101 01111000 01101001 01110011 01110100 01100101 01101110 00100000 01100001 01101100 01100111 01101111 01110010 01101001 01110100 01101101 01101111 01110011 00100000 01110001 01110101 01100101 00100000 01110010 01100101 01110011 01110101 01100101 01101100 01110110 01100101 01101110 00100000 01100101 01110011 01110100 01100001 00100000 01110100 01100001 01110010 01100101 01100001 00101110</span></p></li>
-<li><p>Codifique las siguientes sentencias en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a>.</p>
-<ul class="simple">
-<li><p>“Espera!” semáforo en rojo.</p></li>
-<li><p>12 + 21 = 33?</p></li>
-</ul>
-</li>
-<li><p>Convertir las siguientes representaciones binarias a su equivalente en base 10.</p>
-<ul class="simple">
-<li><p>101010</p></li>
-<li><p>100001</p></li>
-<li><p>10111</p></li>
-<li><p>0110</p></li>
-<li><p>11111</p></li>
-</ul>
-</li>
-<li><p>Convertir cada una de las siguientes representaciones en base 10 a sus equivalente en notación binaria.</p>
-<ul class="simple">
-<li><p>32</p></li>
-<li><p>64</p></li>
-<li><p>96</p></li>
-<li><p>15</p></li>
-<li><p>27</p></li>
-</ul>
-</li>
-<li><p>¿Cuál es el valor numérico más grande que se podría representar con 3 <em>bytes</em> si cada dígito se codificara utilizando un patrón <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> por <em>byte</em>? ¿Y si se utilizara la notación binaria?</p>
-</li>
-<li><p>¿Cuántos megabytes de espacio de almacenamiento se necesitarían para almacenar un documento de 20 páginas que contiene detalles de los empleados, en el que cada página contiene 100 registros y cada registro tiene 200 caracteres, si se usaran caracteres Unicode de dos <em>bytes</em>?</p>
-</li>
-<li><p>¿Cuál es la ventaja de representar imágenes a través de estructuras geométricas en lugar de mapas de <em>bits</em>? ¿Qué pasa con las técnicas de mapa de <em>bits</em> en oposición a las estructuras geométricas?</p>
-</li>
-<li><p>Suponga que una cámara digital tiene una capacidad de almacenamiento de 500 MB. ¿Cuántas fotografías en blanco y negro de 512 x 512 píxeles (filas por columnas) podrían almacenarse si cada píxel requiriera 1 <em>bit</em> de almacenamiento?</p>
-</li>
-<li><p>Suponga que una imagen está representada en una pantalla de visualización por una matriz cuadrada que contiene 256 x 256 píxeles (columnas por filas). Si para cada píxel se requieren 3 <em>bytes</em> para codificar el color y 8 <em>bits</em> para codificar la intensidad, ¿cuánta memoria (en <em>bytes</em>) se requieren para contener la imagen completa?</p>
-</li>
-<li><p>Suponga que desea crear una copia de seguridad de sus datos de alrededor de 10 GB. ¿Qué medio de almacenamiento basado en un sistema óptico sería razonable utilizar?</p>
-</li>
-</ol>
+  <div class="section" id="unidad-central-de-procesamiento">
+<h1>Unidad Central de Procesamiento<a class="headerlink" href="#unidad-central-de-procesamiento" title="Permalink to this headline">¶</a></h1>
+<p>La unidad central de procesamiento (<a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> - <em>Central Processing Unit</em>), comunmente denominada procesador, es el conjunto de circuitos de un computador que controla la manipulación de los datos. Este componente se encuentra empaquetado como pequeños cuadrados planos (de 2 pulgadas apróximadamente) cuyas clavijas de conexión se conectan a un zócalo montado en la placa base. En <em>smartphones</em>, <em>tablets</em> y otros dispositivos móviles, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> tienen aproximadamente la mitad del tamaño de una estampilla y, debido a su pequeño tamaño, estos procesadores se denominan microprocesadores</p>
+<p>La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> se compone de tres partes (<a class="reference internal" href="#fig-cpu"><span class="std std-numref">Fig. 22</span></a>): la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a>, que contiene los circuitos que realizan operaciones con datos (como sumas y restas); la unidad de control, que contiene los circuitos para coordinar las actividades de la máquina; y la unidad de registro, que contiene celdas para el almacenamiento de datos (similares a las celdas de memoria principal), llamadas registros, que se utilizan para el almacenamiento temporal de información dentro de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>. Algunos de estos registros se consideran de propósito general, mientras que otros, son de propósito especial.</p>
+<div class="figure align-center" id="fig-cpu">
+<a class="reference internal image-reference" href="../_images/cpu.png"><img alt="../_images/cpu.png" src="../_images/cpu.png" style="height: 160px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Partes de una CPU</span><a class="headerlink" href="#fig-cpu" title="Permalink to this image">¶</a></p>
+</div>
+<p>Los registros de propósito general se utilizan para el almacenamiento temporal de los datos que manipula la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>. Estos registros contienen las entradas a los circuitos de la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> y proporcionan espacio de almacenamiento para los resultados generados por esta unidad. Para realizar una operación sobre los datos almacenados en la memoria principal, la unidad de control transfiere los datos de la memoria a los registros de propósito general, informa a la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> que contiene los datos, activa el circuito apropiado dentro de la <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> y le indica el registro que debe recibir el resultado.</p>
+<p>Con el propósito de transferir patrones de <em>bits</em>, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> y la memoria principal de una máquina están conectadas por una colección de cables llamada bus (<a class="reference internal" href="#fig-cpu"><span class="std std-numref">Fig. 22</span></a>). A través de este Bus, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> lee datos de la memoria principal proporcionando la dirección de la celda de memoria pertinente junto con una señal electrónica que le señala al circuito de memoria que se supone que debe recuperar los datos en la celda indicada. De manera similar, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> escribe datos en la memoria proporcionando la dirección de la celda de destino y los datos que se almacenarán junto con la señal electrónica apropiada que le indica a la memoria principal que se supone que debe almacenar los datos que se le envían.</p>
+<p>Con base en este diseño, por ejemplo, la tarea de sumar dos valores almacenados en memoria principal implica más que la mera ejecución de la operación de suma. Los datos deben transferirse desde la memoria principal a los registros dentro de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>, los valores deben sumarse y el resultado debe almacenarse en un registro, y luego el resultado debe transferirse hacia una celda de memoria.</p>
+<p>Los registros de propósito general de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> son utilizados en el proceso de ejecución de un programa,</p>
+<p>Para comprender cómo tiene lugar el proceso de ejecución general, es necesario considerar dos de los registros de propósito especial dentro de la CPU: el registro de instrucción y el contador del programa (ver nuevamente la Figura 2.4). El registro de instrucciones se utiliza para mantener la instrucción que se está ejecutando. El contador de programa contiene la dirección de la siguiente instrucción que se ejecutará, por lo que sirve como la forma en que la máquina realiza un seguimiento de dónde se encuentra en el programa.</p>
+<p id="bibtex-bibliography-manipulacion-de-datos/cpu-0"></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -291,7 +271,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./almacenamiento-de-datos"
+            path: "./manipulacion-de-datos"
         },
         predefinedOutput: true
     }
@@ -306,6 +286,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="computador-tipico.html" title="previous page">Computador típico</a>
+    <a class='right-next' id="next-link" href="comunicacion-entre-componentes.html" title="next page">Comunicación entre componentes</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

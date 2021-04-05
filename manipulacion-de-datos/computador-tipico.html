@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios &#8212; Elementos de Informática</title>
+    <title>Computador típico &#8212; Elementos de Informática</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -54,6 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unidad Central de Procesamiento" href="cpu.html" />
+    <link rel="prev" title="Modelo de von Neumann" href="modelo-de-von-neumann.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,22 +97,22 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="digitos-binarios.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
    Dígitos binarios
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="memoria-principal.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
    Memoria principal
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="almacenamiento-masivo.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
    Almacenamiento masivo
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="representacion-de-la-informacion.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
    Representación de la información
   </a>
  </li>
@@ -120,20 +122,40 @@
   Manipulación de datos
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
-   Organización de un computador
+  <a class="reference internal" href="arquitectura-de-un-computador.html">
+   Arquitectura de un computador
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+  <a class="reference internal" href="arquitectura-de-un-computador.html#lenguaje-maquina">
+   Lenguaje máquina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="arquitectura-de-un-computador.html#ejecucion-de-un-programa">
    Ejecución de un programa
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
-   Comunicación con periféricos
+  <a class="reference internal" href="modelo-de-von-neumann.html">
+   Modelo de von Neumann
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Computador típico
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cpu.html">
+   Unidad Central de Procesamiento
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="comunicacion-entre-componentes.html">
+   Comunicación entre componentes
   </a>
  </li>
 </ul>
@@ -186,12 +208,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/almacenamiento-de-datos/ejercicios.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/almacenamiento-de-datos/ejercicios.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/manipulacion-de-datos/computador-tipico.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -223,59 +242,20 @@
         
               <div>
                 
-  <div class="section" id="ejercicios">
-<h1>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>¿Cuál es el valor del <em>bit</em> menos significativo en los patrones de <em>bits</em> representados por las siguientes notaciones hexadecimales?</p>
-<ul class="simple">
-<li><p>9A</p></li>
-<li><p>1B</p></li>
-<li><p>6E</p></li>
-</ul>
-</li>
-<li><p>¿Qué mejora se obtiene aumentando la velocidad de rotación de un disco o CD?</p></li>
-<li><p>¿Qué factores permiten que todos los discos <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a> y Blu-ray sean leídos por una misma unidad?</p></li>
-<li><p>¿Qué ventajas proporcionan las memoriasen comparación con los otros sistemas de almacenamiento masivo?</p></li>
-<li><p>¿Qué características de las unidades de <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> hacen que sigan siendo competitivas?</p></li>
-<li><p>El siguiente código muestra un mensaje codificado en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> utilizando 8 <em>bits</em> por símbolo. Interprete lo que dice.
-<span class="pasted-text">01000101 01111000 01101001 01110011 01110100 01100101 01101110 00100000 01100001 01101100 01100111 01101111 01110010 01101001 01110100 01101101 01101111 01110011 00100000 01110001 01110101 01100101 00100000 01110010 01100101 01110011 01110101 01100101 01101100 01110110 01100101 01101110 00100000 01100101 01110011 01110100 01100001 00100000 01110100 01100001 01110010 01100101 01100001 00101110</span></p></li>
-<li><p>Codifique las siguientes sentencias en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a>.</p>
-<ul class="simple">
-<li><p>“Espera!” semáforo en rojo.</p></li>
-<li><p>12 + 21 = 33?</p></li>
-</ul>
-</li>
-<li><p>Convertir las siguientes representaciones binarias a su equivalente en base 10.</p>
-<ul class="simple">
-<li><p>101010</p></li>
-<li><p>100001</p></li>
-<li><p>10111</p></li>
-<li><p>0110</p></li>
-<li><p>11111</p></li>
-</ul>
-</li>
-<li><p>Convertir cada una de las siguientes representaciones en base 10 a sus equivalente en notación binaria.</p>
-<ul class="simple">
-<li><p>32</p></li>
-<li><p>64</p></li>
-<li><p>96</p></li>
-<li><p>15</p></li>
-<li><p>27</p></li>
-</ul>
-</li>
-<li><p>¿Cuál es el valor numérico más grande que se podría representar con 3 <em>bytes</em> si cada dígito se codificara utilizando un patrón <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> por <em>byte</em>? ¿Y si se utilizara la notación binaria?</p>
-</li>
-<li><p>¿Cuántos megabytes de espacio de almacenamiento se necesitarían para almacenar un documento de 20 páginas que contiene detalles de los empleados, en el que cada página contiene 100 registros y cada registro tiene 200 caracteres, si se usaran caracteres Unicode de dos <em>bytes</em>?</p>
-</li>
-<li><p>¿Cuál es la ventaja de representar imágenes a través de estructuras geométricas en lugar de mapas de <em>bits</em>? ¿Qué pasa con las técnicas de mapa de <em>bits</em> en oposición a las estructuras geométricas?</p>
-</li>
-<li><p>Suponga que una cámara digital tiene una capacidad de almacenamiento de 500 MB. ¿Cuántas fotografías en blanco y negro de 512 x 512 píxeles (filas por columnas) podrían almacenarse si cada píxel requiriera 1 <em>bit</em> de almacenamiento?</p>
-</li>
-<li><p>Suponga que una imagen está representada en una pantalla de visualización por una matriz cuadrada que contiene 256 x 256 píxeles (columnas por filas). Si para cada píxel se requieren 3 <em>bytes</em> para codificar el color y 8 <em>bits</em> para codificar la intensidad, ¿cuánta memoria (en <em>bytes</em>) se requieren para contener la imagen completa?</p>
-</li>
-<li><p>Suponga que desea crear una copia de seguridad de sus datos de alrededor de 10 GB. ¿Qué medio de almacenamiento basado en un sistema óptico sería razonable utilizar?</p>
-</li>
-</ol>
+  <div class="section" id="computador-tipico">
+<h1>Computador típico<a class="headerlink" href="#computador-tipico" title="Permalink to this headline">¶</a></h1>
+<p>Los computadores modernos han evolucionado desde los grandes gigantes de las décadas de 1950 y 1960 hasta las computadoras mucho más pequeñas y poderosas de hoy</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Puedes revisar la <a class="reference external" href="https://www.computerhistory.org/timeline/computers/">línea de tiempo de la historia de la computación</a>.</p>
+</div>
+<p>La <a class="reference internal" href="#fig-laptop"><span class="std std-numref">Fig. 21</span></a> muestra una configuración típica de un computador de sobremesa o notebook. La unidad de entrada está compuesta por el teclado y el touchpad, a través del cual un usuario ingresa datos, instrucción y/o comandos. La pantalla comprendees una unidad de salida, que muestra la salida de forma visual. La <a class="reference internal" href="../anexos/acronimos.html#term-ALU"><span class="xref std std-term">ALU</span></a> y la Unidad de Control están agrupadas en el procesador y esta incluido en la placa base. La unidad de memoria consta de circuitos de memoria individuales (<a class="reference internal" href="../anexos/acronimos.html#term-RAM"><span class="xref std std-term">RAM</span></a>), como también, de una unidad de almacenamiento secundarios (<a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>).</p>
+<div class="figure align-center" id="fig-laptop">
+<img alt="../_images/laptop.jpg" src="../_images/laptop.jpg" />
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Configuración típica de un notebook</span><a class="headerlink" href="#fig-laptop" title="Permalink to this image">¶</a></p>
+</div>
+<p>La placa base, denominada tarjeta madre o <em>motherboard</em>, se enceuentra al interior de los notebooks, como también dentro de cualquiera de la mayoría de los computadores que nos rodea. Esta placa contiene circuitos integrados, ranuras para tarjetas de expansión y los cables que interconectan los circuitos integrados y las ranuras para tarjetas de expansión.</p>
+<p id="bibtex-bibliography-manipulacion-de-datos/computador-tipico-0"></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -291,7 +271,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./almacenamiento-de-datos"
+            path: "./manipulacion-de-datos"
         },
         predefinedOutput: true
     }
@@ -306,6 +286,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="modelo-de-von-neumann.html" title="previous page">Modelo de von Neumann</a>
+    <a class='right-next' id="next-link" href="cpu.html" title="next page">Unidad Central de Procesamiento</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
