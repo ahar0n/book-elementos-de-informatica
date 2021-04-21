@@ -141,6 +141,50 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
+  Sistema de archivos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/concepto-de-archivo.html">
+   Concepto de archivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/metodos-de-acceso.html">
+   Métodos de acceso
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/directorios-y-estructuras.html">
+   Directorios y estructuras
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/archivos-compartidos.html">
+   Archivos compartidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/proteccion.html">
+   Protección
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Prácticas
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../practicas/windows-command.html">
+   Windows Command
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
   Anexos
  </span>
 </p>
@@ -273,11 +317,14 @@ La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span 
 </div>
 <p>A continuación, la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> analiza la instrucción en su registro de instrucciones y ejecuta las acciones obtenidas de la instrucción. Esta actividad se realiza durante el paso de ejecución del ciclo de la máquina, y luego la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> comienza el siguiente ciclo. Este ciclo comienza obteniendo la instrucción 166D de las dos celdas de memoria que comienzan en la dirección A2. La <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> coloca esta instrucción en el registro de instrucciones e incrementa el contador del programa a A4. Por lo tanto, los valores en el contador de programa contiene A4 y el registro de instrucciones contiene 166D. Este proceso se repite hasta que se ejecutan todas las instrucciones del programa almacenado.</p>
 <div class="section" id="lenguaje-maquina">
-<h2>Lenguaje máquina<a class="headerlink" href="#lenguaje-maquina" title="Permalink to this headline">¶</a></h2>
-<p>Para aplicar el concepto de programa almacenado, las <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> están diseñadas para reconocer instrucciones codificadas como patrones de <em>bits</em>. Esta colección de instrucciones junto con el sistema de codificación se denomina lenguaje máquina.</p>
-<p>La lista de instrucciones máquina que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> típica debe poder decodificar y ejecutar es bastante corta. De hecho, una vez que una máquina puede realizar ciertas tareas elementales pero bien elegidas, agregar más funciones no aumenta las capacidades teóricas de la máquina.</p>
-<p>El grado en que los diseños de máquinas deben aprovechar este hecho ha llevado a dos filosofías de la arquitectura de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>. Una es que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> debe diseñarse para ejecutar un conjunto mínimo de instrucciones de máquina. Este enfoque conduce a lo que se llama computador de conjunto de instrucciones reducido (<a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> - <em>reduced instruction set computer</em>). El argumento a favor de la arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> es que dicha máquina es eficiente, rápida y menos costosa de fabricar. Por otro lado, otros argumentan a favor de las <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> con la capacidad de ejecutar una gran cantidad de instrucciones complejas, aunque muchas de ellas son técnicamente redundantes. El resultado de este enfoque se conoce como computador de conjunto de instrucciones complejas (<a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> - <em>complex instruction set computer</em>). El argumento a favor de la arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> es que la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> más compleja puede hacer frente mejor a las complejidades cada vez mayores del software actual. Con <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>, los programas pueden explotar un poderoso y rico conjunto de instrucciones, muchas de las cuales requerirían una secuencia de múltiples instrucciones en un diseño <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a>. En la década de 1990 y en el nuevo milenio, los procesadores <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> y <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> disponibles comercialmente competían activamente por el dominio en la computación de escritorio. Los procesadores Intel, utilizados en PC, son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>. Los procesadores PowerPC (desarrollados por una alianza entre Apple, IBM y Motorola) son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> y se utilizaron en Apple Macintosh. A medida que pasaba el tiempo, el costo de fabricación de <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> se redujo drásticamente; por lo tanto, los procesadores de Intel (o su equivalente de AMD — Advanced Micro Devices, Inc.) ahora se encuentran en prácticamente todas los computadores de escritorio y portátiles.
-Si bien <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> aseguró su lugar en los computadores de escritorio, tienen un alto consumo energético. Por el contrario, la empresa Advanced RISC Machine (ARM) ha diseñado una arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> específicamente para un bajo consumo de energía. Por lo tanto, los procesadores basados ​​en ARM, fabricados por una gran cantidad de proveedores, incluidos Qualcomm y Texas Instruments, se encuentran en controladores de juegos, televisores digitales, sistemas de navegación, módulos automotrices, celulares. teléfonos, teléfonos inteligentes y otros productos electrónicos de consumo.</p>
+<span id="content-lenguaje-maquina"></span><h2>Lenguaje máquina<a class="headerlink" href="#lenguaje-maquina" title="Permalink to this headline">¶</a></h2>
+<p>Para aplicar el concepto de programa almacenado de von Neumann, las <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> están diseñadas para reconocer instrucciones codificadas como patrones de <em>bits</em>. Esta colección de instrucciones junto con el sistema de codificación se denomina lenguaje máquina.</p>
+<p>La lista de instrucciones máquina que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> típica debe poder decodificar y ejecutar es bastante corta. De hecho, una vez que una máquina puede realizar ciertas tareas elementales pero bien definidas, agregar más funciones no aumenta las capacidades teóricas de la máquina. El grado en que los diseños de máquinas deben aprovechar este hecho ha llevado a dos filosofías de la arquitectura de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a>. Una es que una <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> debe diseñarse para ejecutar un conjunto mínimo de instrucciones máquina. Este enfoque conduce a lo que se llama computador de instrucciones reducidas (<a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> - <em>reduced instruction set computer</em>). El argumento a favor de esta arquitectura es que dicha máquina es eficiente, rápida y mas económica de fabricar. Por otro lado, existen otros que argumentan a favor de la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> con la capacidad de ejecutar una gran cantidad de instrucciones complejas, aunque muchas de ellas son técnicamente redundantes. El resultado de este enfoque se conoce como computador de instrucciones complejas (<a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> - <em>complex instruction set computer</em>). El argumento a favor de esta arquitectura es que la <a class="reference internal" href="../anexos/acronimos.html#term-CPU"><span class="xref std std-term">CPU</span></a> más compleja puede enfrentar mejor las complejidades cada vez mayores del software actual. Con <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>, los programas pueden explotar un poderoso y variado conjunto de instrucciones, muchas de las cuales requerirían una secuencia de múltiples instrucciones en un diseño <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a>. Desde la década de 1990, los procesadores <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> y <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> disponibles comercialmente competen activamente por el dominio en la computación de escritorio. Los procesadores Intel, utilizados en PC, son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>. Los procesadores PowerPC (desarrollados por una alianza entre Apple, IBM y Motorola) son ejemplos de arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> y se utilizaron en Apple Macintosh. A medida que pasaba el tiempo, el costo de fabricación de <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> se redujo drásticamente; por lo tanto, los procesadores de Intel (o su equivalente de AMD — Advanced Micro Devices, Inc.) ahora se encuentran en prácticamente todas los computadores de escritorio y portátiles.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En general, el término PC hace referencia a cualquier computador cuya arquitectura se basa en el microprocesador de IBM. Algunos <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>s compatibles con un PC son Microsoft Windows, Linux, FreeBSD y Solaris. Por otra parte, Macintosh es conocida como Mac, una marca que cubre varias líneas de computadores personales diseñadas, desarrolladas y comercializadas por Apple Inc.</p>
+</div>
+<p>Si bien <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a> aseguró su lugar en los computadores de escritorio, tienen un alto consumo energético. Por el contrario, la empresa Advanced RISC Machine (ARM) ha diseñado una arquitectura <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> específicamente para un bajo consumo de energía. Por lo tanto, los procesadores basados ​​en ARM, fabricados por una gran cantidad de proveedores, incluidos Qualcomm y Texas Instruments, se encuentran en controladores de juegos, televisores digitales, sistemas de navegación, módulos automotrices, celulares. teléfonos, teléfonos inteligentes y otros productos electrónicos de consumo.</p>
 <p>Independientemente de la arquitectura, <a class="reference internal" href="../anexos/acronimos.html#term-RISC"><span class="xref std std-term">RISC</span></a> o <a class="reference internal" href="../anexos/acronimos.html#term-CISC"><span class="xref std std-term">CISC</span></a>, las instrucciones máquina se pueden clasificar en tres grupos:</p>
 <ol class="simple">
 <li><p><strong>Grupo de transferencia de datos</strong> consta de instrucciones que solicitan el movimiento de datos de una ubicación a otra.</p></li>
@@ -291,7 +338,7 @@ Si bien <a class="reference internal" href="../anexos/acronimos.html#term-CISC">
 <p>Desafortunadamente, diferentes diseños de CPU pueden realizar diferentes cantidades de trabajo en un ciclo de reloj y, por lo tanto, la velocidad del reloj por sí sola no es relevante al comparar máquinas con diferentes CPU. Si está comparando una máquina basada en un procesador Intel con una basada en ARM, sería más significativo comparar el rendimiento mediante la evaluación comparativa, que es el proceso de comparar el rendimiento de diferentes máquinas al ejecutar el mismo programa, conocido como <em>benchmark</em>. Al seleccionar puntos de referencia que representan diferentes tipos de aplicaciones, se obtiene comparaciones significativas para varios segmentos del mercado. (por ejemplo, <a class="reference external" href="https://www.profesionalreview.com/2020/04/05/procesadores-intel-vs-amd-ryzen/">Comparativa de rendimiento: Intel vs AMD Ryzen</a>)</p>
 <p id="bibtex-bibliography-manipulacion-de-datos/ejecucion-de-un-programa-0"><dl class="citation">
 <dt class="bibtex label" id="brookshear-computer-2015"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>J Glenn Brookshear and Dennis Brylow. <em>Computer Science: An Overview</em>. Pearson, Harlow, England, 12th edition, March 2015. ISBN 978-1-292-06116-0.</p>
+<dd><p>J Glenn Brookshear and Dennis Brylow. <em>Computer Science: An Overview</em>. Pearson, Harlow, England, 12th edition, 2015.</p>
 </dd>
 </dl>
 </p>

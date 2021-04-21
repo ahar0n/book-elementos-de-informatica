@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios &#8212; Elementos de Informática</title>
+    <title>Protección &#8212; Elementos de Informática</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -54,6 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Windows Command" href="../practicas/windows-command.html" />
+    <link rel="prev" title="Archivos compartidos" href="archivos-compartidos.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,22 +97,22 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="digitos-binarios.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
    Dígitos binarios
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="memoria-principal.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
    Memoria principal
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="almacenamiento-masivo.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
    Almacenamiento masivo
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="representacion-de-la-informacion.html">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
    Representación de la información
   </a>
  </li>
@@ -142,29 +144,29 @@
   Sistema de archivos
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../sistemas-de-archivos/concepto-de-archivo.html">
+  <a class="reference internal" href="concepto-de-archivo.html">
    Concepto de archivo
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../sistemas-de-archivos/metodos-de-acceso.html">
+  <a class="reference internal" href="metodos-de-acceso.html">
    Métodos de acceso
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../sistemas-de-archivos/directorios-y-estructuras.html">
+  <a class="reference internal" href="directorios-y-estructuras.html">
    Directorios y estructuras
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../sistemas-de-archivos/archivos-compartidos.html">
+  <a class="reference internal" href="archivos-compartidos.html">
    Archivos compartidos
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../sistemas-de-archivos/proteccion.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Protección
   </a>
  </li>
@@ -230,12 +232,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/almacenamiento-de-datos/ejercicios.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/almacenamiento-de-datos/ejercicios.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/sistemas-de-archivos/proteccion.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -267,59 +266,39 @@
         
               <div>
                 
-  <div class="section" id="ejercicios">
-<h1>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>¿Cuál es el valor del <em>bit</em> menos significativo en los patrones de <em>bits</em> representados por las siguientes notaciones hexadecimales?</p>
+  <div class="section" id="proteccion">
+<h1>Protección<a class="headerlink" href="#proteccion" title="Permalink to this headline">¶</a></h1>
+<p>Cuando la información se almacena en un sistema informático, es impor- tante mantener ciertos niveles de seguridad de daños físicos (fiabilidad) y del acceso indebido (protección).</p>
+<p>La fiabilidad se obtiene generalmente mediante copias duplicadas de los archivos. Muchos informáticos tienen programas de sistemas que copian automáticamente los archivos de disco a sistemas de respaldo con intervalos regulares (una vez al día o a la semana o al mes) para mantener una copia en caso de que un sistema de archivos se destruya accidentalmente. Los sistemas de archivos pueden ser dañados por problemas de hardware (como errores de lectura o escritura), subidas o bajadas de tensión, caídas de cabeza, suciedad, temperaturas extremas, entre otros. Los archivos pueden ser borrados accidentalmente. Los errores en el software del sistema de archivos también pueden causar la pérdida del contenido de los archivos.</p>
+<p>La protección se puede proporcionar de muchas maneras. En un sistemas con multiples usuarios se necesitan mecanismos de protección, los cuales proporcionan un acceso controlado limitando los tipos de acceso a los archivos. El acceso se permite o se niega dependiendo de varios factores, uno de los cuales es el tipo de acceso solicitado. Se pueden controlar varios tipos diferentes de operaciones:</p>
 <ul class="simple">
-<li><p>9A</p></li>
-<li><p>1B</p></li>
-<li><p>6E</p></li>
+<li><p>Lectura de un archivo.</p></li>
+<li><p>Escritura o re-escritura de archivo.</p></li>
+<li><p>Ejecución, carga de un archivo en memoria y ejecución.</p></li>
+<li><p>Adicionar nueva información al final de un archivo.</p></li>
+<li><p>Borrar un archivo.</p></li>
+<li><p>Listar el nombre y atributos de un archivos.</p></li>
 </ul>
-</li>
-<li><p>¿Qué mejora se obtiene aumentando la velocidad de rotación de un disco o CD?</p></li>
-<li><p>¿Qué factores permiten que todos los discos <a class="reference internal" href="../anexos/acronimos.html#term-CD"><span class="xref std std-term">CD</span></a>, <a class="reference internal" href="../anexos/acronimos.html#term-DVD"><span class="xref std std-term">DVD</span></a> y Blu-ray sean leídos por una misma unidad?</p></li>
-<li><p>¿Qué ventajas proporcionan las memoriasen comparación con los otros sistemas de almacenamiento masivo?</p></li>
-<li><p>¿Qué características de las unidades de <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> hacen que sigan siendo competitivas?</p></li>
-<li><p>El siguiente código muestra un mensaje codificado en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> utilizando 8 <em>bits</em> por símbolo. Interprete lo que dice.
-<span class="pasted-text">01000101 01111000 01101001 01110011 01110100 01100101 01101110 00100000 01100001 01101100 01100111 01101111 01110010 01101001 01110100 01101101 01101111 01110011 00100000 01110001 01110101 01100101 00100000 01110010 01100101 01110011 01110101 01100101 01101100 01110110 01100101 01101110 00100000 01100101 01110011 01110100 01100001 00100000 01110100 01100001 01110010 01100101 01100001 00101110</span></p></li>
-<li><p>Codifique las siguientes sentencias en <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a>.</p>
-<ul class="simple">
-<li><p>“Espera!” semáforo en rojo.</p></li>
-<li><p>12 + 21 = 33?</p></li>
-</ul>
-</li>
-<li><p>Convertir las siguientes representaciones binarias a su equivalente en base 10.</p>
-<ul class="simple">
-<li><p>101010</p></li>
-<li><p>100001</p></li>
-<li><p>10111</p></li>
-<li><p>0110</p></li>
-<li><p>11111</p></li>
-</ul>
-</li>
-<li><p>Convertir cada una de las siguientes representaciones en base 10 a sus equivalente en notación binaria.</p>
-<ul class="simple">
-<li><p>32</p></li>
-<li><p>64</p></li>
-<li><p>96</p></li>
-<li><p>15</p></li>
-<li><p>27</p></li>
-</ul>
-</li>
-<li><p>¿Cuál es el valor numérico más grande que se podría representar con 3 <em>bytes</em> si cada dígito se codificara utilizando un patrón <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a> por <em>byte</em>? ¿Y si se utilizara la notación binaria?</p>
-</li>
-<li><p>¿Cuántos megabytes de espacio de almacenamiento se necesitarían para almacenar un documento de 20 páginas que contiene detalles de los empleados, en el que cada página contiene 100 registros y cada registro tiene 200 caracteres, si se usaran caracteres Unicode de dos <em>bytes</em>?</p>
-</li>
-<li><p>¿Cuál es la ventaja de representar imágenes a través de estructuras geométricas en lugar de mapas de <em>bits</em>? ¿Qué pasa con las técnicas de mapa de <em>bits</em> en oposición a las estructuras geométricas?</p>
-</li>
-<li><p>Suponga que una cámara digital tiene una capacidad de almacenamiento de 500 MB. ¿Cuántas fotografías en blanco y negro de 512 x 512 píxeles (filas por columnas) podrían almacenarse si cada píxel requiriera 1 <em>bit</em> de almacenamiento?</p>
-</li>
-<li><p>Suponga que una imagen está representada en una pantalla de visualización por una matriz cuadrada que contiene 256 x 256 píxeles (columnas por filas). Si para cada píxel se requieren 3 <em>bytes</em> para codificar el color y 8 <em>bits</em> para codificar la intensidad, ¿cuánta memoria (en <em>bytes</em>) se requieren para contener la imagen completa?</p>
-</li>
-<li><p>Suponga que desea crear una copia de seguridad de sus datos de alrededor de 10 GB. ¿Qué medio de almacenamiento basado en un sistema óptico sería razonable utilizar?</p>
-</li>
-</ol>
+<p>También pueden controlarse otras operaciones, como el cambio de nombre, la copia y la edición del archivo. Sin embargo, en muchos sistemas, estas funciones de nivel superior pueden ser implementadas por un programa de sistema.</p>
+<p>El enfoque más común del problema de la protección es hacer que el acceso dependa de la identidad del usuario. Diferentes usuarios pueden necesitar diferentes tipos de acceso a un archivo o directorio. El esquema más general para aplicar el acceso dependiente de la identidad es asociar a cada archivo y directorio una lista de control de acceso (<a class="reference internal" href="../anexos/acronimos.html#term-ACL"><span class="xref std std-term">ACL</span></a> - <em>acces-control-list</em>) en la que se especifiquen los nombres de los usuarios y los tipos de acceso permitidos para cada uno de ellos. Cuando un usuario solicita acceso a un determinado archivo, el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> comprueba la lista de acceso asociada a ese archivo. Si ese usuario figura en la lista para el acceso solicitado, el acceso está permitido. De lo contrario, se produce una violación de la protección y se deniega al usuario el acceso al archivo.</p>
+<p>En general los <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>s definen una lista de control de acceso con tres clasificaciones de usuarios en relación con cada archivo:</p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">owner</span></code></dt><dd><p>Usuario que creó el archivo es el propietario.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">group</span></code></dt><dd><p>Usuarios que compartan el archivo.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">universe</span></code></dt><dd><p>Todos los demás usuarios del sistema.</p>
+</dd>
+</dl>
+<p>Entonces, sólo se necesitan tres campos para definir la protección. A menudo, cada campo es una colección de bits, y cada bit permite o impide el acceso asociado a él. Por ejemplo, el sistema UNIX define tres campos de 3 bits cada uno: <code class="docutils literal notranslate"><span class="pre">rwx</span></code>, donde <code class="docutils literal notranslate"><span class="pre">r</span></code> controla el acceso de lectura, <code class="docutils literal notranslate"><span class="pre">w</span></code> controla el acceso de escritura y <code class="docutils literal notranslate"><span class="pre">x</span></code> controla la ejecución. Se mantiene un campo separado para el propietario del archivo, para el grupo del archivo y para todos los demás usuarios. En este esquema, se necesitan 9 bits por archivo para registrar la información de protección. En el siguiente ejemplo, se presenta el nivel de protección de un archivo es sistema UNIX. El primer campo describe indica si es un subdirectorio (<code class="docutils literal notranslate"><span class="pre">d</span></code>) o no. También se muestra el número de enlaces al archivos, el nombre del propietario, el nombre del grupo, el tamaño en bytes, la fecha de modificación y el nombre del archivo.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>-rw-rw-r--   5 aharon  staff.  31200  May 15 06:25  intro.tex
+</pre></div>
+</div>
+<p>Los usuarios de Windows suelen gestionar las listas de control de acceso a través de la <a class="reference internal" href="../anexos/acronimos.html#term-GUI"><span class="xref std std-term">GUI</span></a>. La <a class="reference internal" href="#fig-proteccion"><span class="std std-numref">Fig. 40</span></a> muestra una ventana de permisos del subdirectorio <code class="docutils literal notranslate"><span class="pre">dir2</span></code> en el sistema de archivos NTFS de Windows 10.</p>
+<div class="figure align-center" id="fig-proteccion">
+<a class="reference internal image-reference" href="../_images/proteccion-win.png"><img alt="../_images/proteccion-win.png" src="../_images/proteccion-win.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Gestión de la <a class="reference internal" href="../anexos/acronimos.html#term-ACL"><span class="xref std std-term">ACL</span></a> en Microsoft Windows 10.</span><a class="headerlink" href="#fig-proteccion" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -335,7 +314,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./almacenamiento-de-datos"
+            path: "./sistemas-de-archivos"
         },
         predefinedOutput: true
     }
@@ -350,6 +329,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="archivos-compartidos.html" title="previous page">Archivos compartidos</a>
+    <a class='right-next' id="next-link" href="../practicas/windows-command.html" title="next page">Windows Command</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

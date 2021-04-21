@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Commands &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Acrónimos" href="../anexos/acronimos.html" />
+    <link rel="prev" title="Protección" href="../sistemas-de-archivos/proteccion.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+   Ejecución de un programa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
+   Comunicación con periféricos
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Sistema de archivos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/concepto-de-archivo.html">
+   Concepto de archivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/metodos-de-acceso.html">
+   Métodos de acceso
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/directorios-y-estructuras.html">
+   Directorios y estructuras
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/archivos-compartidos.html">
+   Archivos compartidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sistemas-de-archivos/proteccion.html">
+   Protección
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Prácticas
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Windows Commands
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/practicas/windows-command.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iniciar-el-interprete">
+   Iniciar el interprete
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comandos-basicos">
+   Comandos básicos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#listar-archivos">
+     Listar archivos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navegar-entre-directorios">
+     Navegar entre directorios
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#crear-directorios">
+     Crear directorios
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#crear-archivos-de-texto">
+     Crear archivos de texto
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mover-y-copiar-archivos">
+     Mover y copiar archivos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#renombrar-archivos-y-directorios">
+     Renombrar archivos y directorios
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#borrar-archivos">
+     Borrar archivos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wildcard">
+     Wildcard
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="windows-commands">
+<h1>Windows Commands<a class="headerlink" href="#windows-commands" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>El shell de comandos fue el primer interprete de comandos incorporado en Windows para automatizar tareas rutinarias con archivos por lotes (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Es posible automatiza operaciones de forma eficiente utilizando scripts que aceptan todos los comandos disponibles en la línea de comandos.</p>
+<p>– <a class="reference external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands">Microsoft.com</a></p>
+</div></blockquote>
+<p>El interprete de comandos (<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code>) de Windows es un software que proporciona comunicación directa entre el usuario y el sistema operativo o la aplicación, lo que proporciona un entorno para automatizar las operaciones y scripting básico.</p>
+<div class="section" id="iniciar-el-interprete">
+<h2>Iniciar el interprete<a class="headerlink" href="#iniciar-el-interprete" title="Permalink to this headline">¶</a></h2>
+<p>Existen dos formas de abrir el interprete de comandos de Windows:</p>
+<ol class="simple">
+<li><p>Escribir <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> en la caja de la barra de búsqueda de la barra de tareas y hacer click en la aplicación Command Prompt de la lista de resultados.</p></li>
+<li><p>Abrir una ventana de ejecutar en Windows con la combinación <kbd>Win</kbd> + <kbd>R</kbd>, escribir la palabra <code class="docutils literal notranslate"><span class="pre">cdm.exe</span></code> y pulsar aceptar.</p></li>
+</ol>
+<p>Por defecto el intérprete de comandos inicia en el directorio del usuario, como se muestra en <a class="reference internal" href="#fig-prompt"><span class="std std-numref">Fig. 41</span></a>. En algunas ocasiones es necesario solicitar permisos de administrados para ejecutar acciones con el sistema.</p>
+<div class="figure align-default" id="fig-prompt">
+<a class="reference internal image-reference" href="../_images/prompt.png"><img alt="../_images/prompt.png" src="../_images/prompt.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">Ventana del intérprete de comandos (<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code>) de Windows 10.</span><a class="headerlink" href="#fig-prompt" title="Permalink to this image">¶</a></p>
+</div>
+<p>Windows inicia el intérprete de comandos en el directorio de usuario. Por ejemplo, en la imagen anterior el prompt está indicando que el usuario se encuentra en el dispositivo <code class="docutils literal notranslate"><span class="pre">C:</span></code> , en el subdirectorio <strong>aharon</strong> del directorio <strong>User</strong>. El intérprete esta esperando que se ingresen comandos.</p>
+<p>El <em>path</em> se refiere a la ubicación o nombre de un archivos, dispositivo o página web donde está localizado.</p>
+<div class="figure align-default" id="fig-path">
+<a class="reference internal image-reference" href="../_images/path.png"><img alt="../_images/path.png" src="../_images/path.png" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 42 </span><span class="caption-text">Esquema de <em>path</em> en Windows.</span><a class="headerlink" href="#fig-path" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Los comandos se ejecutan uno a uno escribiendo el comando y presionando <kbd>Enter</kbd>.</p></li>
+<li><p>El intérprete no distingue entre mayúsculas y minúsculas.</p></li>
+<li><p>Para trabajar con nombres de archivos o directorios con un espacio, deben ser ingresados entre comillas. Por ejemplo, el directorio <strong>Mis Documentos</strong> debería teclearse <code class="docutils literal notranslate"><span class="pre">&quot;Mis</span> <span class="pre">Documentos&quot;</span></code>.</p></li>
+<li><p>Los nombres de archivos pueden tener un archivo largo de 255 caracteres y una extensión de archivo de tres caracteres.</p></li>
+<li><p>Cuando se elimina un archivo o directorio en la línea de comandos, no se mueve a la Papelera de reciclaje.</p></li>
+<li><p>Para solicitar ayuda con cualquier de los comandos, escriba <code class="docutils literal notranslate"><span class="pre">/?</span></code> después del comando. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">dir</span> <span class="pre">/?</span></code> mostraría las opciones disponibles para el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="comandos-basicos">
+<h2>Comandos básicos<a class="headerlink" href="#comandos-basicos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="listar-archivos">
+<h3>Listar archivos<a class="headerlink" href="#listar-archivos" title="Permalink to this headline">¶</a></h3>
+<p>Escriba <code class="docutils literal notranslate"><span class="pre">dir</span></code> en el prompt para listar los archivos en el directorio actual. Se debería obtener una salida similar a la imagen de ejemplo de abajo.</p>
+<div class="figure align-default" id="fig-dir-out">
+<a class="reference internal image-reference" href="../_images/dir-out.png"><img alt="../_images/dir-out.png" src="../_images/dir-out.png" style="width: 500px;" /></a>
+</div>
+<p>Notar que la salida muestra variada información útil, incluyendo la fecha y hora de creación, los directorios (<code class="docutils literal notranslate"><span class="pre">&lt;DIR&gt;</span></code>), y el nombre del directorio o archivo. En el ejemplo, hay 0 archivos listados y 15 directorios como se indica por el estado en la parte inferior de la salida.</p>
+<p>Cada comando tiene opciones, que son interruptores y comandos adicionales que pueden añadirse después del comando. Por ejemplo, con el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code> puede aceptar el interruptor <code class="docutils literal notranslate"><span class="pre">/p</span></code> para listar los archivos y directorios en el directorio actual una página a la vez. Este interruptor es útil para ver todos los archivos y directorios de un directorio que tienen muchos archivos.</p>
+<p>Cada una de las opciones y conmutadores de comandos puede ser buscado en la <a class="reference external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands">documentación</a> específica de cada comando.</p>
+</div>
+<div class="section" id="navegar-entre-directorios">
+<h3>Navegar entre directorios<a class="headerlink" href="#navegar-entre-directorios" title="Permalink to this headline">¶</a></h3>
+<p>Para moverse a un directorio se usa el comando <code class="docutils literal notranslate"><span class="pre">cd</span></code>, por lo tanto para moverse al <strong>Escritorio</strong> debería teclear (seguido de <kbd>Enter</kbd>):</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cd Escritorio
+</pre></div>
+</div>
+<p>Entonces, en el ejemplo, el prompt debería cambiar  <code class="docutils literal notranslate"><span class="pre">C:\Users\aharon\Desktop&gt;</span></code>.</p>
+<p>Antes de cambiar de directorio, será necesario conocer los directorios que están disponibles en el directorio actual. Para ello, puede usar el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p>
+<p>Para retroceder un directorio, puede usar el siguiente comando.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cd ..
+</pre></div>
+</div>
+<p>En el ejemplo, subirá un nivel en la estructura de directorios, esto es, al directorio <code class="docutils literal notranslate"><span class="pre">C:\Users\aharon\</span></code>. Para volver a retroceder un directorio se tendría que volver a teclear <code class="docutils literal notranslate"><span class="pre">cd..</span></code> y se posicionaría en <code class="docutils literal notranslate"><span class="pre">C:\Users\</span></code>.</p>
+<p>Si estuvieras en más de un directorio (por ejemplo, <code class="docutils literal notranslate"><span class="pre">C:\Users\aharon\Desktop\</span></code>) y quisieras volver al directorio raíz <code class="docutils literal notranslate"><span class="pre">c:\</span></code>, podrías usar el siguiente comando.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cd \
+</pre></div>
+</div>
+<p>La raíz o directorio raíz (<em>root directory</em>) es el nivel más alto en una jerarquía de directorios e incluye todos los demás directorios bajo ella.</p>
+<p>Para moverse en varios directorios con un solo comando, el comando similar al ejemplo siguiente. En este ejemplo, el comando se movería al directorio del <strong>System</strong>, que es un subdirectorio del directorio de <strong>Windows</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cd Windows/System
+</pre></div>
+</div>
+</div>
+<div class="section" id="crear-directorios">
+<h3>Crear directorios<a class="headerlink" href="#crear-directorios" title="Permalink to this headline">¶</a></h3>
+<p>Para crear un directorio en el directorio actual, usa el comando <code class="docutils literal notranslate"><span class="pre">mkdir</span></code>. Por ejemplo, el siguiente comando crea el directorio <strong>prueba.</strong> Si se crea con éxito, se le devolverá al prompt sin ningún mensaje de error. Una vez creado el directorio, puede ingresar a él utilizando el comando <code class="docutils literal notranslate"><span class="pre">cd</span></code>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>mkdir prueba
+</pre></div>
+</div>
+<p>En el siguiente ejemplo se crea el directorio <strong>Nueva carpeta</strong>. Note que para tratar con nombres que incluyen espacios, debe ingresar el nombre entre comillas dobles.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>mkdir &quot;Nueva Carpeta&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="crear-archivos-de-texto">
+<h3>Crear archivos de texto<a class="headerlink" href="#crear-archivos-de-texto" title="Permalink to this headline">¶</a></h3>
+<p>El comando <code class="docutils literal notranslate"><span class="pre">copy</span> <span class="pre">con</span></code> permite crear un archivo y escribir su contenido línea por línea.</p>
+<p>Al ejecutar el siguiente comando, el cursor se mueve hacia abajo hasta una línea en blanco, lo que permite agregar contenido al nuevo archivo línea por línea. Una vez que agregue todo el contenido deseado, para crear el archivo, presione <kbd>Enter</kbd> para llegar a una línea en blanco, presione la combinación de teclas <kbd>CTRL</kbd> + <kbd>Z</kbd>. Una vez que aparezca <code class="docutils literal notranslate"><span class="pre">^Z</span></code> en la pantalla, presione <kbd>Enter</kbd> para guardar el archivo y salir. En la pantalla se mostrará un mensaje indicando que el archivo ha sido creado.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy con mi_archivo.txt
+</pre></div>
+</div>
+<p>Utilizando el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code> podrá comprobar en el listado mostrado que aparecerá el archivo <strong>mi_archivo.txt</strong>.</p>
+<p>Alternativamente, puede iniciar el programa Notepad de Windows y cualquier editor de texto para crear un archivo desde la línea de comandos. Por ejemplo,</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>start notepad mi_segundo_archivo.txt
+</pre></div>
+</div>
+<p>El comando anterior utiliza el comando de <code class="docutils literal notranslate"><span class="pre">start</span></code> para ejecutar el Notepad y crear <strong>mi_segundo_archivo.txt</strong>. Una vez que se guardan los cambios del archivo, se crea en el mismo directorio en el que se ejecutó el comando de inicio.</p>
+<p>El comando <code class="docutils literal notranslate"><span class="pre">type</span></code> muestra el contenido de un archivo de texto, como el creado anteriormente. Por ejemplo, la siguiente expresión mostraría en pantalla el contenido del archivo <strong>mi_archivo.txt</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>type mi_archivo.txt
+</pre></div>
+</div>
+<p>Debe considerar que si muestra un archivo binario o un archivo creado por un programa, es posible que vea caracteres extraños en la pantalla, estos caracteres representan códigos de control que se utilizan en el archivo binario. En general, no es una buena alternativa usar el comando <code class="docutils literal notranslate"><span class="pre">type</span></code> para mostrar archivos binarios.</p>
+</div>
+<div class="section" id="mover-y-copiar-archivos">
+<h3>Mover y copiar archivos<a class="headerlink" href="#mover-y-copiar-archivos" title="Permalink to this headline">¶</a></h3>
+<p>El siguiente comando lo sitúa en el directorio raíz.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cd \
+</pre></div>
+</div>
+<p>Ahora, cree el directorio <strong>dir2</strong> en el directorio raíz. Luego, ingrese con el comando <code class="docutils literal notranslate"><span class="pre">cd</span></code>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>mkdir dir2
+cd dir2
+</pre></div>
+</div>
+<p>A continuación cree el archivo <strong>nuevo_archivo.txt</strong> con el contenido que usted desee, utilizando el siguiente comando. Puede comprobar su existencia usando el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy con nuevo_archivo.txt
+</pre></div>
+</div>
+<p>Ahora, utilizando el comando <code class="docutils literal notranslate"><span class="pre">move</span></code> moveremos el archivo creado en la carpeta <strong>dir2</strong> hacia el directorio raíz.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>move nuevo_archivo.txt c:\
+</pre></div>
+</div>
+<p>Si tiene exito, se mostrará un mensaje que indicará que el archivo ha sido movido. Si en la instrucción anterior, sustituye el comando <code class="docutils literal notranslate"><span class="pre">move</span></code> por el comando <code class="docutils literal notranslate"><span class="pre">copy</span></code>, se generará una copia del archivo la dirección de destino, en lugar de moverlo.</p>
+<p>Para copiar múltiples archivos de un lugar a otro podría usar el carácter <a class="reference external" href="https://www.notion.so/Windows-commands-306058b939df4317a9a7ff232fbc595e#c3b6382e31c147419c067fd110ad2058">comodín asterisco</a> <code class="docutils literal notranslate"><span class="pre">*</span></code>. La ejecución de la siguiente instrucción copia todos los archivos con extensión <strong>txt</strong> desde el directorio actual hacia directorio <strong>dir2</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy *.txt c:/dir2
+</pre></div>
+</div>
+<p>El siguiente código copia todos los archivos del directorio actual hacia el directorio <strong>prueba</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy *.* c:/prueba
+</pre></div>
+</div>
+<p>También es posible realizar copias de archivos en el mismo directorio (duplicar). La siguiente expresión realizaría una copia del archivo <strong>nuevo_archivo.txt</strong> con el nombre <strong>backup.txt</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy nuevo_archivo.txt backup.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="renombrar-archivos-y-directorios">
+<h3>Renombrar archivos y directorios<a class="headerlink" href="#renombrar-archivos-y-directorios" title="Permalink to this headline">¶</a></h3>
+<p>El comando <code class="docutils literal notranslate"><span class="pre">rename</span></code> permite renombrar archivos. Por ejemplo, la siguiente expresión modifica el nombre del archivo <strong>nuevo_archivo.txt</strong> a <strong>ejemplo.txt</strong>. Utilizando el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code> podríamos verificar que el archivo <strong>nuevo_archivo.txt</strong> ya no existe, pero si el archivo <strong>ejemplo.txt</strong>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rename nuevo_archivo.txt ejemplo.txt
+</pre></div>
+</div>
+<p>Este comando también permite renombrar directorios. La siguiente expresión renombra el directorio <strong>dir2</strong> a <strong>directorio2</strong>. Verificar los resultados de esta acción con el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rename dir2 directorio2
+</pre></div>
+</div>
+</div>
+<div class="section" id="borrar-archivos">
+<h3>Borrar archivos<a class="headerlink" href="#borrar-archivos" title="Permalink to this headline">¶</a></h3>
+<p>El comando <code class="docutils literal notranslate"><span class="pre">del</span></code> nos permite borrar archivos. La siguiente expresión eliminaría el archivo <strong>ejemplo.txt</strong>. Si tiene éxito, la pantalla no mostrará errores y el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code> no mostrará el archivo en el listado.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>del ejemplo.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="wildcard">
+<h3>Wildcard<a class="headerlink" href="#wildcard" title="Permalink to this headline">¶</a></h3>
+<p>También conocido como carácter comodín, es un símbolo que se utiliza para reemplazar o representar uno o más caracteres. Los comodines más comunes son el asterisco (*), que representa uno o más caracteres y el signo de interrogación (?) que representa un solo carácter.</p>
+<ul class="simple">
+<li><p>El comodín asterisco <code class="docutils literal notranslate"><span class="pre">*</span></code> coincide con cualquier carácter cero o más veces. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">comp*</span></code> coincide con cualquier cosa que empiece por “comp”, tales como, “computacion”, “completo” y “computador”.</p></li>
+<li><p>Un signo de interrogación <code class="docutils literal notranslate"><span class="pre">?</span></code> coincide con un solo caracter. Por ejemplo, “c?mp” coincide con “camp” y “comp”. El signo de interrogación también puede ser usado más de una vez. Por ejemplo, “c??p” coincidiría con los dos ejemplos anteriores así como con “coop”. Un signo de interrogación a continuación de otro coincidirá con cualquier caracter o ninguno. Por ejemplo, “co??” coincidiría con todos los ejemplos anteriores, pero como son signos de interrogación posteriores también coincidiría con “cop” aunque no sean cuatro caracteres.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./practicas"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../sistemas-de-archivos/proteccion.html" title="previous page">Protección</a>
+    <a class='right-next' id="next-link" href="../anexos/acronimos.html" title="next page">Acrónimos</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

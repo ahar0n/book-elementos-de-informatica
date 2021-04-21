@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concepto de archivo &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Métodos de acceso" href="metodos-de-acceso.html" />
+    <link rel="prev" title="Comunicación con periféricos" href="../manipulacion-de-datos/comunicacion-con-perifericos.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+   Ejecución de un programa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
+   Comunicación con periféricos
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Sistema de archivos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Concepto de archivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="metodos-de-acceso.html">
+   Métodos de acceso
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="directorios-y-estructuras.html">
+   Directorios y estructuras
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="archivos-compartidos.html">
+   Archivos compartidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="proteccion.html">
+   Protección
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Prácticas
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../practicas/windows-command.html">
+   Windows Command
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/sistemas-de-archivos/concepto-de-archivo.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sistemas-de-archivos/concepto-de-archivo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atributos-de-archivos">
+   Atributos de archivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operaciones-con-archivos">
+   Operaciones con archivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipos-de-archivos">
+   Tipos de archivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estructura-de-archivos">
+   Estructura de archivos
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="concepto-de-archivo">
+<h1>Concepto de archivo<a class="headerlink" href="#concepto-de-archivo" title="Permalink to this headline">¶</a></h1>
+<p>Para la mayoría de los usuarios, el sistema de archivos es el aspecto más visible de un <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>. Proporciona el mecanismo para el almacenamiento y el acceso a los datos como a los programas del <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> y a todos los usuarios del sistema. El sistema de archivos consta de dos partes</p>
+<ul class="simple">
+<li><p>Una colección de archivos, cada uno de los cuales almacena datos relacionados.</p></li>
+<li><p>Una estructura de directorios que organiza y proporciona información sobre todos los archivos del sistema.</p></li>
+</ul>
+<p>Los computadores pueden almacenar información en diferentes medios de almacenamiento (e.g., discos magnéticos y discos ópticos). Para que el sistema informático sea conveniente de usar, el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> proporciona una vista lógica uniforme de la información almacenada. El <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> se abstrae de las propiedades físicas de sus dispositivos de almacenamiento para definir una unidad de almacenamiento lógico, denominada archivo. Los archivos son mapeados por el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> en los dispositivos físicos, los cuales suelen ser no volátiles, por lo que el contenido es persistente entre los reinicios del sistema.</p>
+<p>Un archivo es una colección de información relacionada que se registra en dispositivos de almacenamiento secundario. <a class="bibtex reference internal" href="#silberschatz-operating-2013" id="id1">[1]</a> Desde la perspectiva del usuario, un archivo es la asignación más pequeña de almacenamiento secundario lógico; es decir, los datos no pueden escribirse en un almacenamiento secundario a menos que estén dentro de un archivo. En general, los archivos representan programas y datos. Los programas pueden estar almacenados en forma de código fuente u objeto. Los datos pueden ser de tipo numéricos, alfabéticos, alfanuméricos o binarios. Los archivos pueden ser en forma de texto (texto plano), o pueden tener un formato rígido. En general, un archivo es una secuencia de <em>bits</em>, <em>bytes</em>, líneas o registros, cuyo significado es definido por el creador y el usuario del archivo. Por lo tanto, el concepto de archivo es extremadamente general.</p>
+<p>Un archivo puede contener diferente tipo información: código fuente o archivos ejecutables, datos numéricos o de texto, fotos, música, vídeo, etc. Un archivo tiene una estructura definida, la cual depende de su tipo. Un archivo de texto es una secuencia de caracteres organizados en líneas (y posiblemente páginas). Un archivo de código fuente es una secuencia de funciones, cada una de las cuales se organiza a su vez como instrucciones de declaraciones ejecutables. Un archivo ejecutable es una serie de secciones de código que el cargador puede traer a la memoria y ejecutar.</p>
+<div class="section" id="atributos-de-archivos">
+<h2>Atributos de archivos<a class="headerlink" href="#atributos-de-archivos" title="Permalink to this headline">¶</a></h2>
+<p>Para la conveniencia de los usuarios los archivos son identificados, y se hace referencia a él por su nombre. Este nombre suele ser una cadena de caracteres, como por ejemplo <code class="docutils literal notranslate"><span class="pre">prueba.txt</span></code>. Algunos sistemas de archivos diferencian entre mayúsculas y minúsculas en los nombres, mientras que otros sistemas no. Cuando se le asigna nombre a un archivo, éste se independiza del proceso, del usuario e incluso del sistema que lo ha creado. Por ejemplo, un usuario puede crear el archivo <code class="docutils literal notranslate"><span class="pre">ejemplo.txt</span></code> y otro usuario puede editarlo especificando su nombre. El propietario del archivo podría escribirlo en un dispositivo <a class="reference internal" href="../anexos/acronimos.html#term-USB"><span class="xref std std-term">USB</span></a>, enviarlo como un archivo adjunto de correo electrónico o copiarlo a través de una red, y aún así podría llamarse <code class="docutils literal notranslate"><span class="pre">ejemplo.txt</span></code> en el sistema de destino.</p>
+<p>Los atributos de un archivo varían de un <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> a otro, pero normalmente son los siguientes.</p>
+<ul class="simple">
+<li><p>Nombre simbólico del archivo, es la única información que se mantiene en forma legible para las personas.</p></li>
+<li><p>Etiqueta única (identificador), normalmente un número, identifica el archivo en el sistema de archivos.</p></li>
+<li><p>Información del tipo de archivo, necesaria para los sistemas que admiten diferentes tipos de archivos.</p></li>
+<li><p>Puntero a un dispositivo y a la ubicación del archivo (<em>path</em>) en el dispositivo.</p></li>
+<li><p>El tamaño actual del archivo (generalmente en bytes o bloques) y posiblemente el tamaño máximo permitido.</p></li>
+<li><p>Información de control de acceso que determina quién puede leer, escribir, ejecutar, etc.</p></li>
+<li><p>Información de la hora, fecha e identificación del usuario. Esta información puede ser guardada para su creación, última modificación y último uso. Estos datos pueden ser útiles para la protección, la seguridad y el control de uso.</p></li>
+</ul>
+<div class="figure align-center" id="fig-archivo-info">
+<a class="reference internal image-reference" href="../_images/archivo-info.png"><img alt="../_images/archivo-info.png" src="../_images/archivo-info.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Atributos de un archivo (ventana de MS Windows)</span><a class="headerlink" href="#fig-archivo-info" title="Permalink to this image">¶</a></p>
+</div>
+<p>Algunos de los sistemas de archivos más recientes también admiten atributos extendidos de los archivo, incluida la codificación de caracteres (e.g., UTF-8, Unicode) y características de seguridad. La <a class="reference internal" href="#fig-archivo-info"><span class="std std-numref">Fig. 30</span></a> muestra los atributos de un archivo en ventanas con información proporcionada por Windows.</p>
+<p>La información referida a todos los archivos se mantiene en la estructura de directorios, que también reside en el almacenamiento secundario. Típicamente, una entrada de directorio consiste en el nombre del archivo y su identificador único. El identificador a su vez localiza los demás atributos del archivo. Puede ser necesario más de un kilobyte para registrar esta información para cada archivo. En un sistema con muchos archivos, el tamaño del directorio en sí puede ser de megabytes. Dado que los directorios, como los archivos, deben ser no volátiles, deben ser almacenados en el dispositivo y llevados a la memoria según sea necesario.</p>
+</div>
+<div class="section" id="operaciones-con-archivos">
+<h2>Operaciones con archivos<a class="headerlink" href="#operaciones-con-archivos" title="Permalink to this headline">¶</a></h2>
+<p>Un archivo es un tipo de dato abstracto. Cualquier sistema de archivos proporciona no solo un medio para almacenar datos organizados como archivos, sino una colección de funciones que se pueden realizar en archivos. Las operaciones típicas incluyen,</p>
+<ul class="simple">
+<li><p><strong>Crear</strong>, define y posiciona un nuevo archivo dentro de la estructura de archivos.</p></li>
+<li><p><strong>Eliminar</strong>, elimina un archivo de la estructura de archivos y se destruye.</p></li>
+<li><p><strong>Abrir</strong>, un archivo existente se declara para ser <em>abierto</em> por un proceso, lo que permite que el proceso realice funciones en el archivo.</p></li>
+<li><p><strong>Cerrar</strong>, cierra un archivo con respecto a un proceso, de modo que dicho proceso ya no pueda realizar funciones en el archivo, hasta que el proceso lo abra nuevamente.</p></li>
+<li><p><strong>Leer</strong>, un proceso lee todos o una parte de los datos de un archivo.</p></li>
+<li><p><strong>Escribir</strong>, un proceso actualiza un archivo, ya sea agregando nuevos datos que expanden el tamaño del archivo o cambiando los valores de los elementos de datos existentes en el archivo.</p></li>
+</ul>
+<p>Normalmente, un sistema de archivos mantiene un conjunto de atributos asociados con el archivo. Estos incluyen el propietario, la hora de creación, la hora de la última modificación y los privilegios de acceso (ver <a class="reference internal" href="#fig-archivo-info"><span class="std std-numref">Fig. 30</span></a>).</p>
+<p>La mayoría de las operaciones de archivo mencionadas implican la búsqueda en el directorio de la entrada asociada al archivo nombrado. Para evitar esta búsqueda constante, muchos sistemas requieren que se haga una llamada al sistema (abrir el archivo) antes de utilizar un archivo por primera vez. El <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> mantiene una tabla de archivos abiertos con la información de todos los archivos abiertos. Cuando se solicita una operación de archivo, el archivo se especifica mediante un índice en esta tabla, por lo que no es necesario realizar ninguna búsqueda. Cuando el archivo ya no se utiliza activamente, el proceso lo cierra (o debe cerrarlo) y el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> elimina su entrada de la tabla de archivos abiertos. Las operaciones de creación y eliminación son llamadas al sistema que funcionan con archivos cerrados en lugar de abiertos.</p>
+<p>Algunos sistemas abren implícitamente un archivo cuando se hace la primera referencia a él. El archivo se cierra automáticamente cuando termina el trabajo o el programa que lo abrió. Sin embargo, la mayoría de los sistemas requieren que el programador abra un archivo explícitamente con la llamada de sistema antes de que se pueda usar ese archivo. Esta operación toma el nombre de archivo y busca en el directorio, copiando la entrada del directorio en la tabla de archivos abiertos. Esta llamada además puede aceptar el acceso a la información en modo de creación, sólo lectura, lectura-escritura, sólo adición, etc. Este modo se comprueba con los permisos del archivo. Si el modo de solicitud está permitido, el archivo se abre para el proceso.</p>
+<p>La información asociadas a un archivo abierto puede resumirse en: el rastreo de la ultima posición de lectura/escritura, un recuento de los archivos abiertos, la información necesaria para localizar el archivo en disco y los tipos de permisos de acceso al archivo para autorizar o denegar solicitudes. Algunos {term<code class="docutils literal notranslate"><span class="pre">}OS</span></code>s ofrecen facilidades para bloquear un archivo, impidiendo que otros procesos accedan a él. Esta funcionalidad impide, por ejemplo, que archivos compartidos por varios procesos puedan modificarlo de forma simultánea, hasta que se libere el bloqueo. En otros casos, podría proporcionarse accesos de lectura de un archivo compartido, que se encuentra bloqueado por algún proceso.</p>
+</div>
+<div class="section" id="tipos-de-archivos">
+<h2>Tipos de archivos<a class="headerlink" href="#tipos-de-archivos" title="Permalink to this headline">¶</a></h2>
+<p>Si un <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> reconoce un tipo de un archivo, puede entonces operar con el archivo de maneras razonables. Una técnica común para implementar los tipos de archivo es incluir su tipo como parte del nombre del archivo. El nombre de un archivo se divide en el nombre y una extensión, normalmente separados por un punto. De esta forma, el usuario y el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> pueden saber, sólo por el nombre, qué tipo de archivo es.</p>
+<p>La mayoría de los sistemas operativos permiten a los usuarios especificar un nombre de archivo como una secuencia de caracteres seguida de un punto y terminada por una extensión compuesta de caracteres adicionales.</p>
+<div class="figure align-left" id="tab-hola-ascii">
+<div class="cell_output docutils container">
+<div class="output text_html"><style  type="text/css" >
+</style><table id="T_d3371_" ><thead>    <tr>        <th class="col_heading level0 col0" >Tipo/funcion</th>        <th class="col_heading level0 col1" >Extensión usual</th>    </tr></thead><tbody>
+                <tr>
+                                <td id="T_d3371_row0_col0" class="data row0 col0" >Ejecutable (programas)</td>
+                        <td id="T_d3371_row0_col1" class="data row0 col1" >exe, com, bin, none</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row1_col0" class="data row1 col0" >Código fuente (varios lenguajes)</td>
+                        <td id="T_d3371_row1_col1" class="data row1 col1" >java, py, c</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row2_col0" class="data row2 col0" >Batch</td>
+                        <td id="T_d3371_row2_col1" class="data row2 col1" >bat, sh</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row3_col0" class="data row3 col0" >Lenguaje de marcado (datos y doc.) </td>
+                        <td id="T_d3371_row3_col1" class="data row3 col1" >xml, html, tex</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row4_col0" class="data row4 col0" >Procesador de texto (formatos) Librerías</td>
+                        <td id="T_d3371_row4_col1" class="data row4 col1" >lib, a, so, dll</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row5_col0" class="data row5 col0" >Vista o impresión (ASCII o binario)</td>
+                        <td id="T_d3371_row5_col1" class="data row5 col1" >gif, pdf, jpg</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row6_col0" class="data row6 col0" >Archivo (comprimidos)</td>
+                        <td id="T_d3371_row6_col1" class="data row6 col1" >rar, zip, tar</td>
+            </tr>
+            <tr>
+                                <td id="T_d3371_row7_col0" class="data row7 col0" >Multimedia (binario contiene audio) </td>
+                        <td id="T_d3371_row7_col1" class="data row7 col1" >mpeg, mov, mp3, mp4, avi</td>
+            </tr>
+    </tbody></table></div></div>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Ejemplos de tipos de archivos.</span><a class="headerlink" href="#tab-hola-ascii" title="Permalink to this image">¶</a></p>
+</div>
+<p>El <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> utiliza la extensión para indicar el tipo de archivo y el tipo de opera- ciones que se pueden realizar en ese archivo. Los programas de aplicación también utilizan extensiones para indicar los tipos de archivos en los que están interesados. Estas extensiones no siempre son necesarias, por lo que un usuario puede especificar un archivo sin la extensión (para evitar tener que escribir), y la aplicación buscará un archivo con el nombre y la extensión que espera.</p>
+</div>
+<div class="section" id="estructura-de-archivos">
+<h2>Estructura de archivos<a class="headerlink" href="#estructura-de-archivos" title="Permalink to this headline">¶</a></h2>
+<p>Los tipos de archivos también pueden utilizarse para indicar la estructura interna del archivo. Los siguientes términos (<a class="reference internal" href="#fig-estructura-archivo"><span class="std std-numref">Fig. 32</span></a>) son de uso común en este contexto <a class="bibtex reference internal" href="#stallings-operating-2015" id="id2">[2]</a>:</p>
+<div class="figure align-center" id="fig-estructura-archivo">
+<a class="reference internal image-reference" href="../_images/estructura-archivo.png"><img alt="../_images/estructura-archivo.png" src="../_images/estructura-archivo.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Conceptos comunes de estructuras de archivos.</span><a class="headerlink" href="#fig-estructura-archivo" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="simple myst">
+<dt>Campo</dt><dd><p>Es el elemento básico de los datos. Un campo individual contiene un valor único, como el apellido de un empleado, una fecha o el valor de la lectura de un sensor. Se caracteriza por su longitud y tipo de datos (por ejemplo, cadena <a class="reference internal" href="../anexos/acronimos.html#term-ASCII"><span class="xref std std-term">ASCII</span></a>, decimal. Dependiendo del diseño del archivo, los campos pueden tener una longitud fija o variable. En el último caso, el campo a menudo consta de dos o tres subcampos: el valor real que se va a almacenar, el nombre del campo y, en algunos casos, la longitud del campo. En otros casos de campos de longitud variable, la longitud del campo se indica mediante el uso de símbolos de demarcación especiales entre campos.</p>
+</dd>
+<dt>Registro</dt><dd><p>Es una colección de campos relacionados que algún software de aplicación puede tratar como una unidad. Por ejemplo, un registro de empleado contendría campos como nombre, número de seguro social, clasificación del trabajo, fecha de contratación, etc. Nuevamente, dependiendo del diseño, los registros pueden tener una longitud fija o variable. Un registro será de longitud variable si algunos de sus campos son de longitud variable o si el número de campos puede variar. En el último caso, cada campo suele ir acompañado de un nombre de campo.</p>
+</dd>
+<dt>Archivo</dt><dd><p>Es una colección de registros similares. Los usuarios y las aplicaciones tratan el archivo como una entidad única y se puede hacer referencia a él por su nombre.
+Los archivos tienen nombre y se pueden crear y eliminar. Las restricciones de control de acceso generalmente se aplican a nivel de archivo. Es decir, en un sistema compartido, a los usuarios y programas se les concede o restringe el acceso a archivos completos.</p>
+</dd>
+<dt>Base de datos</dt><dd><p>Es una colección de datos relacionados. Los aspectos esenciales de una base de datos son que las relaciones que existen entre los elementos de los datos son explícitas y que la base de datos está diseñada para ser utilizada por varias aplicaciones diferentes. Una base de datos puede contener toda la información relacionada con una organización o un proyecto, como una empresa o un estudio científico. La base de datos en sí consta de uno o más tipos de archivos. Por lo general, existe un sistema de administración de base de datos independiente que es independiente del <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>, aunque ese sistema puede hacer uso de algunos programas de administración de archivos.</p>
+</dd>
+</dl>
+<p>Cabe señalar que no todos los archivos presentan el tipo de estructura presentado anteriormente. En algunos sistemas, la estructura de archivo básica es solo un flujo de bytes. Por ejemplo, un programa en Python se almacena como un archivo pero no tiene campos, registros, etc.</p>
+<p>Todos los <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> deben soportar al menos una estructura de archivo, la de un archivo ejecutable, para que el sistema sea capaz de cargar y ejecutar programas. Además, cada software de aplicación debe incluir su propio código para interpretar un archivo de entrada en cuanto a la estructura apropiada, de lo contrario, cuando las nuevas aplicaciones requieren información estructurada de manera no soportada por el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>, pueden errores.</p>
+<p>Los sistemas de disco suelen tener un tamaño de bloques bien definido determinado por el tamaño de un sector. Todas las entradas/salidas de los discos se realizan en unidades de un bloque (registro físico), y todos los bloques tienen el mismo tamaño. Es poco probable que el tamaño del registro físico coincida exactamente con la longitud del registro lógico deseado. Los registros lógicos pueden incluso variar en longitud. El empaquetamiento de varios registros lógicos en bloques físicos es una solución común a este problema.</p>
+<p>El tamaño del registro lógico, el tamaño del bloque físico y la técnica de empaquetamiento determinan cuántos registros lógicos hay en cada bloque físico. El empaquetamiento puede ser hecho por el programa de aplicación del usuario o por el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>. En cualquier caso, el archivo puede ser considerado como una secuencia de bloques. Todas las funciones básicas de entrada/salida operan en términos de bloques. La conversión de registros lógicos a bloques físicos es un problema de software relativamente simple.</p>
+<p>Dado que el espacio de disco siempre se asigna en bloques, generalmente se desperdicia una parte del último bloque de cada archivo. Si cada bloque fuera de 512 bytes, por ejemplo, a un fichero de 1949 bytes se le asignarían cuatro bloques (2048 bytes); los últimos 99 bytes se desperdiciarían. El desperdicio que se produce al mantener todo en unidades de bloques (en lugar de bytes) se conoce como fragmentación interna. Todos los sistemas de archivos sufren de fragmentación interna; cuanto mayor sea el tamaño del bloque, mayor será la fragmentación interna.</p>
+<p id="bibtex-bibliography-sistemas-de-archivos/concepto-de-archivo-0"><dl class="citation">
+<dt class="bibtex label" id="silberschatz-operating-2013"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne. <em>Operating System Concepts</em>. Wiley, nine edition, 2013. ISBN 978-1-118-09375-7.</p>
+</dd>
+<dt class="bibtex label" id="stallings-operating-2015"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>William Stallings. <em>Operating Systems: Internals and Design Principles</em>. Pearson Education Limited, 8 edition, 2015. ISBN 978-0-13-380591-8.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sistemas-de-archivos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../manipulacion-de-datos/comunicacion-con-perifericos.html" title="previous page">Comunicación con periféricos</a>
+    <a class='right-next' id="next-link" href="metodos-de-acceso.html" title="next page">Métodos de acceso</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
