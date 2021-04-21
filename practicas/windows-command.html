@@ -310,6 +310,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#borrar-directorios">
+     Borrar directorios
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#wildcard">
      Wildcard
     </a>
@@ -449,7 +454,7 @@ cd dir2
 </pre></div>
 </div>
 <p>Si tiene exito, se mostrará un mensaje que indicará que el archivo ha sido movido. Si en la instrucción anterior, sustituye el comando <code class="docutils literal notranslate"><span class="pre">move</span></code> por el comando <code class="docutils literal notranslate"><span class="pre">copy</span></code>, se generará una copia del archivo la dirección de destino, en lugar de moverlo.</p>
-<p>Para copiar múltiples archivos de un lugar a otro podría usar el carácter <a class="reference external" href="https://www.notion.so/Windows-commands-306058b939df4317a9a7ff232fbc595e#c3b6382e31c147419c067fd110ad2058">comodín asterisco</a> <code class="docutils literal notranslate"><span class="pre">*</span></code>. La ejecución de la siguiente instrucción copia todos los archivos con extensión <strong>txt</strong> desde el directorio actual hacia directorio <strong>dir2</strong>.</p>
+<p>Para copiar múltiples archivos de un lugar a otro podría usar el carácter comodín asterisco <code class="docutils literal notranslate"><span class="pre">*</span></code>. La ejecución de la siguiente instrucción copia todos los archivos con extensión <strong>txt</strong> desde el directorio actual hacia directorio <strong>dir2</strong>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>copy *.txt c:/dir2
 </pre></div>
 </div>
@@ -477,6 +482,13 @@ cd dir2
 <h3>Borrar archivos<a class="headerlink" href="#borrar-archivos" title="Permalink to this headline">¶</a></h3>
 <p>El comando <code class="docutils literal notranslate"><span class="pre">del</span></code> nos permite borrar archivos. La siguiente expresión eliminaría el archivo <strong>ejemplo.txt</strong>. Si tiene éxito, la pantalla no mostrará errores y el comando <code class="docutils literal notranslate"><span class="pre">dir</span></code> no mostrará el archivo en el listado.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>del ejemplo.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="borrar-directorios">
+<h3>Borrar directorios<a class="headerlink" href="#borrar-directorios" title="Permalink to this headline">¶</a></h3>
+<p>El comando <code class="docutils literal notranslate"><span class="pre">rmdir</span></code> o <code class="docutils literal notranslate"><span class="pre">rd</span></code> permite borrar directorios, siempre que se ecnuentren vacios. La siguiente expresión eliminaría el archivo <strong>mi_directorio</strong> localizado en el subdirectorio <strong>Public</strong>, estando situado en el directorio raiz.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rmdir \Public\mi_directorio
 </pre></div>
 </div>
 </div>
