@@ -105,7 +105,7 @@ mkdir prueba
 En el siguiente ejemplo se crea el directorio **Nueva carpeta**. Note que para tratar con nombres que incluyen espacios, debe ingresar el nombre entre comillas dobles.
 
 ```plain
-mkdir "Nueva Carpeta"
+mkdir "Nueva carpeta"
 ```
 
 ### Crear archivos de texto
