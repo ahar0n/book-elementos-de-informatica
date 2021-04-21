@@ -23,7 +23,7 @@ Por defecto el intérprete de comandos inicia en el directorio del usuario, como
 Ventana del intérprete de comandos (`cmd.exe`) de Windows 10.
 ```
 
-Windows inicia el intérprete de comandos en el directorio de usuario. Por ejemplo, en la imagen anterior el prompt está indicando que el usuario se encuentra en el dispositivo `C:` , en el subdirectorio **aharon** del directorio **User**. El intérprete esta esperando que se ingresen comandos.
+Windows inicia el intérprete de comandos en el directorio de usuario. Por ejemplo, en la imagen anterior el prompt está indicando que el usuario se encuentra en el dispositivo `C:` , en el subdirectorio **aharon** del directorio **Users**. El intérprete esta esperando que se ingresen comandos.
 
 El _path_ se refiere a la ubicación o nombre de un archivos, dispositivo o página web donde está localizado.
 
