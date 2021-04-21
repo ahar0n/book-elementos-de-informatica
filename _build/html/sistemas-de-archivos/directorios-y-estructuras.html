@@ -179,7 +179,7 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../practicas/windows-command.html">
-   Windows Command
+   Windows Commands
   </a>
  </li>
 </ul>
@@ -339,12 +339,12 @@
 <h2>Rutas<a class="headerlink" href="#rutas" title="Permalink to this headline">¶</a></h2>
 <p>Cuando el sistema de archivos está organizado en estructuras de directorios, se necesita alguna forma para especificar los nombres de los archivos. Normalmente se utilizan dos métodos diferentes: ruta absoluta y ruta relativa.</p>
 <p>En el método de <strong>ruta absoluta</strong>, a cada archivo se le asigna un nombre de ruta absoluto que consiste en la ruta desde el directorio raíz hasta el archivo. Como ejemplo,</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>\Users\Public\Documents
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>\Users\Public\Documents
 </pre></div>
 </div>
 <p>significa que el directorio raíz contiene un subdirectorio <code class="docutils literal notranslate"><span class="pre">Users</span></code>, que a su vez contiene un subdirectorio <code class="docutils literal notranslate"><span class="pre">Public</span></code>, que contiene <code class="docutils literal notranslate"><span class="pre">Documents</span></code>. Los nombres de ruta absolutos siempre comienzan en el directorio raíz y son únicos. En sistemas UNIX, los componentes de la ruta están separados por <code class="docutils literal notranslate"><span class="pre">/</span></code>, en Windows, el separador es <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p>
 <p>El otro métodos, es el de <strong>ruta relativa</strong>. Esto se usa junto con el concepto de  “directorio actual”. Un usuario puede designar un directorio como el directorio de trabajo actual, en cuyo caso todos los nombres de ruta que no comienzan en el directorio raíz se consideraran en relación con el directorio de trabajo. Por ejemplo, si el directorio de trabajo actual es,</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>\Users\Public
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>\Users\Public
 </pre></div>
 </div>
 <p>entonces, el archivo cuya ruta absoluta es <code class="docutils literal notranslate"><span class="pre">\Users\Public\Documents</span></code> puede ser referenciado simplemente como <code class="docutils literal notranslate"><span class="pre">Documents</span></code>.</p>

@@ -62,9 +62,9 @@ Cada una de las opciones y conmutadores de comandos puede ser buscado en la [doc
 
 ### Navegar entre directorios
 
-Para moverse a un directorio se usa el comando `cd`, por lo tanto para moverse al **Escritorio** debería teclear (seguido de <kbd>Enter</kbd>):
+Para navegar entre directorios se utiliza el comando `cd`. Por ejemplo, situarse en el directorio **Escritorio**, subdirectorio del directorio actual, debería ejecutar la instrucción:
 
-```plain
+```text
 cd Escritorio
 ```
 
@@ -72,17 +72,17 @@ Entonces, en el ejemplo, el prompt debería cambiar  `C:\Users\aharon\Desktop>`.
 
 Antes de cambiar de directorio, será necesario conocer los directorios que están disponibles en el directorio actual. Para ello, puede usar el comando `dir`.
 
-Para retroceder un directorio, puede usar el siguiente comando.
+Para retroceder un directorio, puede ejecutar el siguiente comando.
 
-```plain
+```text
 cd ..
 ```
 
 En el ejemplo, subirá un nivel en la estructura de directorios, esto es, al directorio `C:\Users\aharon\`. Para volver a retroceder un directorio se tendría que volver a teclear `cd..` y se posicionaría en `C:\Users\`.
 
-Si estuvieras en más de un directorio (por ejemplo, `C:\Users\aharon\Desktop\`) y quisieras volver al directorio raíz `c:\`, podrías usar el siguiente comando.
+Si estuvieras en más de un directorio (por ejemplo, `C:\Users\aharon\Desktop\`) y quisieras volver al directorio raíz `c:\`, podría teclear el siguiente comando.
 
-```plain
+```text
 cd \
 ```
 
@@ -90,22 +90,39 @@ La raíz o directorio raíz (_root directory_) es el nivel más alto en una jera
 
 Para moverse en varios directorios con un solo comando, el comando similar al ejemplo siguiente. En este ejemplo, el comando se movería al directorio del **System**, que es un subdirectorio del directorio de **Windows**.
 
-```plain
-cd Windows/System
+```text
+cd Windows\System
 ```
+
+Para tener una vista general de la estructura de directorios, el comando `tree` nos muestra de forma gráfica el árbol de directorios. Por ejemplo, para ver la estructura de carpetas del directorio **Users**, la ejecución de la siguiente instrucción,
+
+```text
+tree \Users
+```
+
+muestra como resultado el árbol de directorio presentado en la {numref}`fig-arbol`.
+
+```{figure} ../images/arbol-windows.png
+:width: 500px
+:name: fig-arbol
+
+Ejemplo uso de comando `tree`
+```
+
+
 
 ### Crear directorios
 
-Para crear un directorio en el directorio actual, usa el comando `mkdir`. Por ejemplo, el siguiente comando crea el directorio **prueba.** Si se crea con éxito, se le devolverá al prompt sin ningún mensaje de error. Una vez creado el directorio, puede ingresar a él utilizando el comando `cd`.
+Para crear un directorio en el directorio actual, usa el comando `mkdir`. Por ejemplo, el siguiente comando crea el directorio **prueba**. Si se crea con éxito, se le devolverá al prompt sin ningún mensaje de error. Una vez creado el directorio, puede ingresar a él utilizando el comando `cd`.
 
-```plain
+```text
 mkdir prueba
 ```
 
 En el siguiente ejemplo se crea el directorio **Nueva carpeta**. Note que para tratar con nombres que incluyen espacios, debe ingresar el nombre entre comillas dobles.
 
-```plain
-mkdir "Nueva Carpeta"
+```text
+mkdir "Nueva carpeta"
 ```
 
 ### Crear archivos de texto
@@ -114,7 +131,7 @@ El comando `copy con` permite crear un archivo y escribir su contenido línea po
 
 Al ejecutar el siguiente comando, el cursor se mueve hacia abajo hasta una línea en blanco, lo que permite agregar contenido al nuevo archivo línea por línea. Una vez que agregue todo el contenido deseado, para crear el archivo, presione <kbd>Enter</kbd> para llegar a una línea en blanco, presione la combinación de teclas <kbd>CTRL</kbd> + <kbd>Z</kbd>. Una vez que aparezca `^Z` en la pantalla, presione <kbd>Enter</kbd> para guardar el archivo y salir. En la pantalla se mostrará un mensaje indicando que el archivo ha sido creado.
 
-```plain
+```text
 copy con mi_archivo.txt
 ```
 
@@ -122,7 +139,7 @@ Utilizando el comando `dir` podrá comprobar en el listado mostrado que aparecer
 
 Alternativamente, puede iniciar el programa Notepad de Windows y cualquier editor de texto para crear un archivo desde la línea de comandos. Por ejemplo,
 
-```plain
+```text
 start notepad mi_segundo_archivo.txt
 ```
 
@@ -130,7 +147,7 @@ El comando anterior utiliza el comando de `start` para ejecutar el Notepad y cre
 
 El comando `type` muestra el contenido de un archivo de texto, como el creado anteriormente. Por ejemplo, la siguiente expresión mostraría en pantalla el contenido del archivo **mi_archivo.txt**.
 
-```plain
+```text
 type mi_archivo.txt
 ```
 
@@ -140,26 +157,26 @@ Debe considerar que si muestra un archivo binario o un archivo creado por un pro
 
 El siguiente comando lo sitúa en el directorio raíz.
 
-```plain
+```text
 cd \
 ```
 
 Ahora, cree el directorio **dir2** en el directorio raíz. Luego, ingrese con el comando `cd`.
 
-```plain
+```text
 mkdir dir2
 cd dir2
 ```
 
 A continuación cree el archivo **nuevo_archivo.txt** con el contenido que usted desee, utilizando el siguiente comando. Puede comprobar su existencia usando el comando `dir`.
 
-```plain
+```text
 copy con nuevo_archivo.txt
 ```
 
 Ahora, utilizando el comando `move` moveremos el archivo creado en la carpeta **dir2** hacia el directorio raíz.
 
-```plain
+```text
 move nuevo_archivo.txt c:\
 ```
 
@@ -167,19 +184,19 @@ Si tiene exito, se mostrará un mensaje que indicará que el archivo ha sido mov
 
 Para copiar múltiples archivos de un lugar a otro podría usar el carácter comodín asterisco `*`. La ejecución de la siguiente instrucción copia todos los archivos con extensión **txt** desde el directorio actual hacia directorio **dir2**.
 
-```plain
+```text
 copy *.txt c:/dir2
 ```
 
 El siguiente código copia todos los archivos del directorio actual hacia el directorio **prueba**.
 
-```plain
+```text
 copy *.* c:/prueba
 ```
 
 También es posible realizar copias de archivos en el mismo directorio (duplicar). La siguiente expresión realizaría una copia del archivo **nuevo_archivo.txt** con el nombre **backup.txt**.
 
-```plain
+```text
 copy nuevo_archivo.txt backup.txt
 ```
 
@@ -187,13 +204,13 @@ copy nuevo_archivo.txt backup.txt
 
 El comando `rename` permite renombrar archivos. Por ejemplo, la siguiente expresión modifica el nombre del archivo **nuevo_archivo.txt** a **ejemplo.txt**. Utilizando el comando `dir` podríamos verificar que el archivo **nuevo_archivo.txt** ya no existe, pero si el archivo **ejemplo.txt**.
 
-```plain
+```text
 rename nuevo_archivo.txt ejemplo.txt
 ```
 
 Este comando también permite renombrar directorios. La siguiente expresión renombra el directorio **dir2** a **directorio2**. Verificar los resultados de esta acción con el comando `dir`.
 
-```plain
+```text
 rename dir2 directorio2
 ```
 
@@ -201,7 +218,7 @@ rename dir2 directorio2
 
 El comando `del` nos permite borrar archivos. La siguiente expresión eliminaría el archivo **ejemplo.txt**. Si tiene éxito, la pantalla no mostrará errores y el comando `dir` no mostrará el archivo en el listado.
 
-```plain
+```text
 del ejemplo.txt
 ```
 
@@ -209,13 +226,13 @@ del ejemplo.txt
 
 El comando `rmdir` o `rd` permite borrar directorios, siempre que se ecnuentren vacios. La siguiente expresión eliminaría el archivo **mi_directorio** localizado en el subdirectorio **Public**, estando situado en el directorio raiz.
 
-```plain
+```text
 rmdir \Public\mi_directorio
 ```
 
-### Wildcard
+### _Wildcard_
 
-También conocido como carácter comodín, es un símbolo que se utiliza para reemplazar o representar uno o más caracteres. Los comodines más comunes son el asterisco (*), que representa uno o más caracteres y el signo de interrogación (?) que representa un solo carácter. 
+También conocido como carácter comodín, es un símbolo que se utiliza para reemplazar o representar uno o más caracteres. Los comodines más comunes son el asterisco (`*`), que representa uno o más caracteres y el signo de interrogación (`?`) que representa un solo carácter. 
 
-- El comodín asterisco `*` coincide con cualquier carácter cero o más veces. Por ejemplo, `comp*` coincide con cualquier cosa que empiece por "comp", tales como, "computacion", "completo" y "computador".
-- Un signo de interrogación `?` coincide con un solo caracter. Por ejemplo, "c?mp" coincide con "camp" y "comp". El signo de interrogación también puede ser usado más de una vez. Por ejemplo, "c??p" coincidiría con los dos ejemplos anteriores así como con "coop". Un signo de interrogación a continuación de otro coincidirá con cualquier caracter o ninguno. Por ejemplo, "co??" coincidiría con todos los ejemplos anteriores, pero como son signos de interrogación posteriores también coincidiría con "cop" aunque no sean cuatro caracteres.
+- El asterisco coincide con cualquier carácter cero o más veces. Por ejemplo, `comp*` coincide con cualquiera de las siguientes, `computacion`, `completo` y `computador`.
+- Un signo de interrogación tiene coincidencia con un solo caracter. Por ejemplo, `c?mp` coincide con `camp`, `cemp`, `comp`, etc. El signo de interrogación también puede ser usado más de una vez. Por ejemplo, `c??p` coincidiría con los dos ejemplos anteriores, así como con `coop`. Un signo de interrogación a continuación de otro coincidirá con cualquier caracter o ninguno. Por ejemplo, `co??` coincidiría con todos los ejemplos anteriores, pero como son signos de interrogación posteriores también coincidiría con `cop` aunque no sean cuatro caracteres.

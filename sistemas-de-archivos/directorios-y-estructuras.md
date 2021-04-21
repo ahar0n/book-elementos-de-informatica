@@ -38,7 +38,7 @@ Cuando el sistema de archivos está organizado en estructuras de directorios, se
 
 En el método de __ruta absoluta__, a cada archivo se le asigna un nombre de ruta absoluto que consiste en la ruta desde el directorio raíz hasta el archivo. Como ejemplo,
 
-```plain
+```text
 \Users\Public\Documents
 ```
 
@@ -46,7 +46,7 @@ significa que el directorio raíz contiene un subdirectorio `Users`, que a su ve
 
 El otro métodos, es el de __ruta relativa__. Esto se usa junto con el concepto de  "directorio actual". Un usuario puede designar un directorio como el directorio de trabajo actual, en cuyo caso todos los nombres de ruta que no comienzan en el directorio raíz se consideraran en relación con el directorio de trabajo. Por ejemplo, si el directorio de trabajo actual es,
 
-```plain
+```text
 \Users\Public
 ```
 
