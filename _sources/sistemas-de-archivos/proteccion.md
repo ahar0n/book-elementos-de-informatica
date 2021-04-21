@@ -30,7 +30,7 @@ En general los {term}`OS`s definen una lista de control de acceso con tres clasi
 
 Entonces, sólo se necesitan tres campos para definir la protección. A menudo, cada campo es una colección de bits, y cada bit permite o impide el acceso asociado a él. Por ejemplo, el sistema UNIX define tres campos de 3 bits cada uno: `rwx`, donde `r` controla el acceso de lectura, `w` controla el acceso de escritura y `x` controla la ejecución. Se mantiene un campo separado para el propietario del archivo, para el grupo del archivo y para todos los demás usuarios. En este esquema, se necesitan 9 bits por archivo para registrar la información de protección. En el siguiente ejemplo, se presenta el nivel de protección de un archivo es sistema UNIX. El primer campo describe indica si es un subdirectorio (`d`) o no. También se muestra el número de enlaces al archivos, el nombre del propietario, el nombre del grupo, el tamaño en bytes, la fecha de modificación y el nombre del archivo.
 
-```plain
+```text
 -rw-rw-r--   5 aharon  staff.  31200  May 15 06:25  intro.tex
 ```
 
