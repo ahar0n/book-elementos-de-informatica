@@ -165,7 +165,7 @@ move nuevo_archivo.txt c:\
 
 Si tiene exito, se mostrará un mensaje que indicará que el archivo ha sido movido. Si en la instrucción anterior, sustituye el comando `move` por el comando `copy`, se generará una copia del archivo la dirección de destino, en lugar de moverlo.
 
-Para copiar múltiples archivos de un lugar a otro podría usar el carácter [comodín asterisco](https://www.notion.so/Windows-commands-306058b939df4317a9a7ff232fbc595e#c3b6382e31c147419c067fd110ad2058) `*`. La ejecución de la siguiente instrucción copia todos los archivos con extensión **txt** desde el directorio actual hacia directorio **dir2**.
+Para copiar múltiples archivos de un lugar a otro podría usar el carácter comodín asterisco `*`. La ejecución de la siguiente instrucción copia todos los archivos con extensión **txt** desde el directorio actual hacia directorio **dir2**.
 
 ```plain
 copy *.txt c:/dir2
@@ -203,6 +203,14 @@ El comando `del` nos permite borrar archivos. La siguiente expresión eliminarí
 
 ```plain
 del ejemplo.txt
+```
+
+### Borrar directorios
+
+El comando `rmdir` o `rd` permite borrar directorios, siempre que se ecnuentren vacios. La siguiente expresión eliminaría el archivo **mi_directorio** localizado en el subdirectorio **Public**, estando situado en el directorio raiz.
+
+```plain
+rmdir \Public\mi_directorio
 ```
 
 ### Wildcard
