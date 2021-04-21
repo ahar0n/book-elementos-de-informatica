@@ -24,9 +24,9 @@
     - file: sistemas-de-archivos/archivos-compartidos
     - file: sistemas-de-archivos/proteccion
 
-# - part: Prácticas
-#   chapters:
-#     - file: practicas/windows-command
+- part: Prácticas
+  chapters:
+    - file: practicas/windows-command
 
 
 - part: Anexos
