@@ -15,6 +15,20 @@
     - file: manipulacion-de-datos/ejecucion-de-un-programa
     - file: manipulacion-de-datos/comunicacion-con-perifericos
 
+- part: Sistema de archivos
+  chapters:
+    - file: sistemas-de-archivos/concepto-de-archivo
+    - file: sistemas-de-archivos/metodos-de-acceso
+    - file: sistemas-de-archivos/directorios-y-estructuras
+    - file: sistemas-de-archivos/montaje-del-sistema-de-archivos
+    - file: sistemas-de-archivos/archivos-compartidos
+    - file: sistemas-de-archivos/proteccion
+
+# - part: Prácticas
+#   chapters:
+#     - file: practicas/windows-command
+
+
 - part: Anexos
   chapters:
     - file: anexos/acronimos

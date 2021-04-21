@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directorios y estructuras &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Archivos compartidos" href="archivos-compartidos.html" />
+    <link rel="prev" title="Métodos de acceso" href="metodos-de-acceso.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+   Ejecución de un programa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
+   Comunicación con periféricos
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Sistema de archivos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="concepto-de-archivo.html">
+   Concepto de archivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="metodos-de-acceso.html">
+   Métodos de acceso
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Directorios y estructuras
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="archivos-compartidos.html">
+   Archivos compartidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="proteccion.html">
+   Protección
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sistemas-de-archivos/directorios-y-estructuras.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rutas">
+   Rutas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estructura-de-un-nivel">
+   Estructura de un nivel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estructura-de-dos-niveles">
+   Estructura de dos niveles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estructura-de-arbol">
+   Estructura de árbol
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estructura-de-grafo-aciclico">
+   Estructura de grafo acíclico
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#montaje-del-sistema-de-archivos">
+   Montaje del sistema de archivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografia
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="directorios-y-estructuras">
+<h1>Directorios y estructuras<a class="headerlink" href="#directorios-y-estructuras" title="Permalink to this headline">¶</a></h1>
+<p>Ciertamente, ningún ordenador de propósito general almacena sólo un archivo; normalmente son muchos. Los archivos se almacenan en dispositivos de almacenamiento de acceso aleatorio, incluyendo <a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a>, discos ópticos y <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>.</p>
+<p>Un dispositivo de almacenamiento puede utilizarse en su totalidad para un sistema de archivos. También puede subdividirse para un control más fino. Por ejemplo, un disco puede ser dividido en cuartos, y cada cuarto puede contener un sistema de archivos separado.</p>
+<p>La partición de discos es útil para limitar los tamaños de los sistemas de archivos individuales, poner varios tipos de sistemas de archivos en el mismo dispositivo o dejar parte del dispositivo disponible para otros usos, como espacio de intercambio o espacio de disco sin formatear (<em>raw</em>). Se puede crear un sistema de archivos en cada una de estas partes del disco. Cualquier entidad que contenga un sistema de archivos se conoce generalmente como volumen. El volumen puede ser un subconjunto de un dispositivo, un dispositivo completo o varios dispositivos vinculados entre sí en un conjunto <a class="reference internal" href="../anexos/acronimos.html#term-RAID"><span class="xref std std-term">RAID</span></a>. Cada volumen puede considerarse como un disco virtual. Los volúmenes también pueden almacenar múltiples <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>s, permitiendo que un computador se inicie y ejecute más de un <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="../anexos/acronimos.html#term-RAID"><span class="xref std std-term">RAID</span></a> hace referencia a un sistema de almacenamiento de datos que utiliza múltiples unidades (<a class="reference internal" href="../anexos/acronimos.html#term-HDD"><span class="xref std std-term">HDD</span></a> o <a class="reference internal" href="../anexos/acronimos.html#term-SSD"><span class="xref std std-term">SSD</span></a>), entre las cuales se distribuyen o replican los datos… <a class="reference external" href="https://www.computerlanguage.com/results.php?definition=RAID">leer más acerca de sistemas RAID</a></p>
+</div>
+<div class="margin figure align-default" id="fig-organizacion-file-system">
+<a class="reference internal image-reference" href="../_images/file-system-org.png"><img alt="../_images/file-system-org.png" src="../_images/file-system-org.png" style="height: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Organización típica de un sistema de archivos.</span><a class="headerlink" href="#fig-organizacion-file-system" title="Permalink to this image">¶</a></p>
+</div>
+<p>Cada volumen que contiene un sistema de archivos también debe contener información sobre los archivos del sistema. Esta información se guarda en entradas en un directorio de dispositivos o en un índice de volúmenes. El directorio de dispositivos (comúnmente conocido simplemente como directorio) registra información -como el nombre, la ubicación, el tamaño y el tipo- de todos los archivos de ese volumen. La <a class="reference internal" href="#fig-organizacion-file-system"><span class="std std-numref">Fig. 33</span></a> muestra una organización típica de un sistema de archivos.</p>
+<p>Considerando que los sistemas de archivos pueden ser extensos, es útil segregar los archivos en grupos y gestionar y actuar sobre esos grupos. Esta organización implica el uso de directorios, que en sí mismos son archivos.</p>
+<p>Un directorio puede verse como una tabla de símbolos que traduce los nombres de los archivos a sus entradas de directorio y, puede ser organizado de muchas maneras. La organización debe permitir insertar entradas, borrarlas, buscar una entrada con nombre y listar todas las entradas del directorio. Algunas de las operaciones básicas soportadas por las estructuras de directorio se presentan a continuación <a class="bibtex reference internal" href="#tanenbaum-modern-2015" id="id1">[1]</a>.</p>
+<ul class="simple">
+<li><p><strong>Crear</strong> un directorio.</p></li>
+<li><p><strong>Eliminar</strong> un directorio. En general, sólo se puede borrar un directorio vacío.</p></li>
+<li><p><strong>Abrir</strong>, directorios. Los directorios pueden ser leidos, por ejemplo, para listar todos los archivos en un directorio, un programa abre el directorio para leer los nombres de todos los archivos que contiene. Antes de poder leer un directorio, debe abrirse, de forma análoga a abrir y leer un archivo.</p></li>
+<li><p><strong>Cerrar</strong> directorio. Cuando se ha leído un directorio, debe cerrarse para liberar espacio de tabla interno.</p></li>
+<li><p><strong>Renombrar</strong> un directorio. En muchos aspectos, los directorios son como archivos y se pueden renombrar de la misma manera que los archivos.</p></li>
+<li><p><strong>Link</strong>, es una técnica que permite que un archivo aparezca en más de un directorio. Esta llamada al sistema especifica un archivo existente y un nombre de ruta (<em>path</em>), y crea un enlace desde el archivo existente al nombre especificado por la ruta. De esta forma, el mismo archivo puede aparecer en varios directorios.</p></li>
+<li><p><strong>Unlink</strong>, elimina una entrada de directorio. Si el archivo que se desvincula solo está presente en un directorio (el caso normal), se elimina del sistema de archivos. Si está presente en varios directorios, solo se elimina el nombre de ruta especificado.</p></li>
+</ul>
+<div class="section" id="rutas">
+<h2>Rutas<a class="headerlink" href="#rutas" title="Permalink to this headline">¶</a></h2>
+<p>Cuando el sistema de archivos está organizado en estructuras de directorios, se necesita alguna forma para especificar los nombres de los archivos. Normalmente se utilizan dos métodos diferentes: ruta absoluta y ruta relativa.</p>
+<p>En el método de <strong>ruta absoluta</strong>, a cada archivo se le asigna un nombre de ruta absoluto que consiste en la ruta desde el directorio raíz hasta el archivo. Como ejemplo,</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>\Users\Public\Documents
+</pre></div>
+</div>
+<p>significa que el directorio raíz contiene un subdirectorio <code class="docutils literal notranslate"><span class="pre">Users</span></code>, que a su vez contiene un subdirectorio <code class="docutils literal notranslate"><span class="pre">Public</span></code>, que contiene <code class="docutils literal notranslate"><span class="pre">Documents</span></code>. Los nombres de ruta absolutos siempre comienzan en el directorio raíz y son únicos. En sistemas UNIX, los componentes de la ruta están separados por <code class="docutils literal notranslate"><span class="pre">/</span></code>, en Windows, el separador es <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p>
+<p>El otro métodos, es el de <strong>ruta relativa</strong>. Esto se usa junto con el concepto de  “directorio actual”. Un usuario puede designar un directorio como el directorio de trabajo actual, en cuyo caso todos los nombres de ruta que no comienzan en el directorio raíz se consideraran en relación con el directorio de trabajo. Por ejemplo, si el directorio de trabajo actual es,</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>\Users\Public
+</pre></div>
+</div>
+<p>entonces, el archivo cuya ruta absoluta es <code class="docutils literal notranslate"><span class="pre">\Users\Public\Documents</span></code> puede ser referenciado simplemente como <code class="docutils literal notranslate"><span class="pre">Documents</span></code>.</p>
+<p>La mayoría de los <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> que admiten un sistema de directorio jerárquico tienen dos entradas especiales en cada directorio, <code class="docutils literal notranslate"><span class="pre">.</span></code> y <code class="docutils literal notranslate"><span class="pre">..</span></code>, que generalmente se pronuncian punto y punto punto, respectivamente. El punto se refiere al directorio actual; el punto punto se refiere a su padre (excepto en el directorio raíz, donde se refiere a sí mismo). Por ejemplo, considere la lista de directorios de Windows de la <a class="reference internal" href="#fig-rutas-win"><span class="std std-numref">Fig. 34</span></a>, si un proceso tiene <code class="docutils literal notranslate"><span class="pre">\Users\Public</span></code> como directorio de trabajo, puede usar <code class="docutils literal notranslate"><span class="pre">..</span></code> para referirse al un nivel más alto en la estructura de directorios, en este caso al nivel <code class="docutils literal notranslate"><span class="pre">\Users</span></code>.</p>
+<div class="figure align-default" id="fig-rutas-win">
+<a class="reference internal image-reference" href="../_images/rutas-windows.png"><img alt="../_images/rutas-windows.png" src="../_images/rutas-windows.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Ejemplo de lista de directorios en Windows.</span><a class="headerlink" href="#fig-rutas-win" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="estructura-de-un-nivel">
+<h2>Estructura de un nivel<a class="headerlink" href="#estructura-de-un-nivel" title="Permalink to this headline">¶</a></h2>
+<p>La estructura de directorio más simple es el directorio de un solo nivel. Todos los archivos están contenidos en el mismo directorio, lo que es fácil de apoyar y entender. Tiene limitaciones importantes cuando el número de archivos aumenta o cuando el sistema tiene más de un usuario. Dado que todos los archivos están en el mismo directorio, deben tener nombres únicos, de los contrario, se viola la regla del nombre único. Afortunadamente, la mayoría de los sistemas de archivos admiten nombres de archivos de hasta 255 caracteres, por lo que es relativamente fácil seleccionar nombres de archivos únicos.</p>
+</div>
+<div class="section" id="estructura-de-dos-niveles">
+<h2>Estructura de dos niveles<a class="headerlink" href="#estructura-de-dos-niveles" title="Permalink to this headline">¶</a></h2>
+<p>En una estructura de directorios de dos niveles, cada usuario tiene su propio <em>user file directory</em> (<a class="reference internal" href="../anexos/acronimos.html#term-UFD"><span class="xref std std-term">UFD</span></a>). Estos directorios, tienen estructuras similares, pero cada uno enumera sólo los archivos de un único usuario.</p>
+<div class="figure align-default" id="fig-dir-dos-niveles">
+<a class="reference internal image-reference" href="../_images/two-level-dir.png"><img alt="../_images/two-level-dir.png" src="../_images/two-level-dir.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">Estructura de directorios de dos niveles.</span><a class="headerlink" href="#fig-dir-dos-niveles" title="Permalink to this image">¶</a></p>
+</div>
+<p>Cuando se inicia un trabajo de usuario, se busca en el <em>master file directory</em> (<a class="reference internal" href="../anexos/acronimos.html#term-MFD"><span class="xref std std-term">MFD</span></a>) del sistema. El <a class="reference internal" href="../anexos/acronimos.html#term-MFD"><span class="xref std std-term">MFD</span></a> se indexa por nombre de usuario, y cada entrada apunta al UFD para ese usuario. Esta estructura aísla efectivamente a un usuario de otro. Algunos sistemas simplemente no permiten que otros usuarios accedan a los archivos locales de otro usuario. Para que se permita el acceso, un usuario debe tener la capacidad de nombrar un archivo en el directorio de otro usuario. Para nombrar un archivo en particular de manera única en un directorio de dos niveles, debemos dar tanto el nombre de usuario como el nombre del archivo.</p>
+<p>Un directorio de dos niveles puede considerarse como un árbol invertido, de altura 2. La raíz del árbol (<em>root</em>) es el <a class="reference internal" href="../anexos/acronimos.html#term-MFD"><span class="xref std std-term">MFD</span></a>. Sus directorios descendientes directos son los <a class="reference internal" href="../anexos/acronimos.html#term-MFD"><span class="xref std std-term">MFD</span></a>s. Los descendientes de los <a class="reference internal" href="../anexos/acronimos.html#term-UFD"><span class="xref std std-term">UFD</span></a>s son los propios archivos. La especificación de un nombre de usuario y un nombre de archivo define una ruta en el árbol desde la raíz (el <a class="reference internal" href="../anexos/acronimos.html#term-MFD"><span class="xref std std-term">MFD</span></a>) hasta una el archivo especificado. Así, un nombre de usuario y un nombre de archivo definen un nombre de ruta. Cada archivo del sistema tiene un nombre de ruta (<em>path</em>). Para nombrar un archivo de manera única, el usuario debe conocer el nombre de la ruta del archivo.</p>
+<p>Por ejemplo, si la usuaria A desea acceder a su propio archivo de pruebas llamado <code class="docutils literal notranslate"><span class="pre">prueba.txt</span></code>, puede simplemente referirse a <code class="docutils literal notranslate"><span class="pre">prueba.txt</span></code>. Sin embargo, para acceder al archivo llamado <code class="docutils literal notranslate"><span class="pre">prueba.txt</span></code> del usuario B, puede que tenga que referirse a <code class="docutils literal notranslate"><span class="pre">\userb\prueba.txt</span></code>. Cada sistema tiene su propia sintaxis para nombrar los archivos en directorios distintos del del usuario.</p>
+<p>Adicionalmente, se necesita una sintaxis adicional para especificar el volumen de un archivo. Por ejemplo, en Windows se especifica con una letra seguida de dos puntos. Por lo tanto, una especificación de archivo podría ser,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">userb</span>\<span class="n">prueba</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Otros sistemas, como UNIX y Linux, simplemente tratan el nombre del volumen como parte del nombre del directorio. El primer nombre que se da es el del volumen, y el resto es el directorio y el archivo. Por ejemplo, la siguiente dirección,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">u</span><span class="o">/</span><span class="n">pbg</span><span class="o">/</span><span class="n">prueba</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>podría especificar el volumen <code class="docutils literal notranslate"><span class="pre">u</span></code>, el directorio <code class="docutils literal notranslate"><span class="pre">pbg</span></code>, y el archivo <code class="docutils literal notranslate"><span class="pre">prueba.txt</span></code>.</p>
+</div>
+<div class="section" id="estructura-de-arbol">
+<h2>Estructura de árbol<a class="headerlink" href="#estructura-de-arbol" title="Permalink to this headline">¶</a></h2>
+<p>La generalización de extender la estructura del directorio a un árbol de altura arbitraria, permite a los usuarios crear sus propios subdirectorios y organizar sus archivos. Un árbol es la estructura de directorios más común. El árbol tiene un directorio raíz, y cada archivo del sistema tiene un nombre de ruta único.</p>
+<p>Un directorio (o subdirectorio) contiene un conjunto de archivos o subdi- rectorios. Un directorio es simplemente otro archivo, pero se trata de manera especial. Todos los directorios tienen el mismo formato interno. Un bit en cada entrada del directorio define la entrada como un archivo (0) o como un subdirectorio (1). Se utilizan llamadas especiales del sistema para crear y borrar directorios.</p>
+<p>En el uso normal, cada proceso tiene un directorio actual. El directorio actual debe contener la mayoría de los archivos que son de interés actual para el proceso. Cuando se hace referencia a un archivo, se busca en el directorio actual. Si se necesita un archivo que no está en el directorio actual, entonces el usuario normalmente debe o bien especificar un nombre de ruta o cambiar el directorio actual para que sea el directorio que contiene ese archivo. Para cambiar de directorio, se proporciona una llamada al sistema que toma un nombre de directorio como parámetro y lo utiliza para redefinir el directorio actual. De esta manera, el usuario puede cambiar su directorio actual cuando lo desee. Todas las llamadas de sistema de apertura de archivo buscan en el directorio actual el archivo especificado.</p>
+<p>El directorio actual inicial en el <em>shell</em> de un usuario se designa cuando se inicia el trabajo del usuario. El directorio actual de cualquier subproceso suele ser el directorio actual del padre cuando fue originado el subproceso.</p>
+<div class="figure align-default" id="fig-arbol-directorios">
+<a class="reference internal image-reference" href="../_images/tree-level-dir.png"><img alt="../_images/tree-level-dir.png" src="../_images/tree-level-dir.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">Estructura de árbol de directorios.</span><a class="headerlink" href="#fig-arbol-directorios" title="Permalink to this image">¶</a></p>
+</div>
+<p>Los nombres de las rutas (<em>path</em>) pueden ser de dos tipos: absolutos y relativos. Un nombre de ruta absoluto comienza en la raíz y sigue una ruta hasta el archivo especificado, dando los nombres de los directorios en la ruta. Un nombre de ruta relativo define una ruta desde el directorio actual. Por ejemplo, en el sistema de archivos estructurados en árbol de la <a class="reference internal" href="#fig-arbol-directorios"><span class="std std-numref">Fig. 36</span></a>, si el directorio actual es <code class="docutils literal notranslate"><span class="pre">root/spell/mail</span></code>, entonces el nombre de ruta relativo exp/list se refiere al mismo archivo que el nombre de ruta absoluto <code class="docutils literal notranslate"><span class="pre">root/spell/mail/exp/list</span></code>.</p>
+<p>Permitir que un usuario defina sus propios subdirectorios le permite imponer una estructura a sus archivos. Esta estructura puede dar lugar a directorios separados para los archivos asociados a diferentes contenidos o diferentes formas de información.</p>
+</div>
+<div class="section" id="estructura-de-grafo-aciclico">
+<h2>Estructura de grafo acíclico<a class="headerlink" href="#estructura-de-grafo-aciclico" title="Permalink to this headline">¶</a></h2>
+<p>Una estructura de árbol prohíbe compartir archivos o directorios. Un grafo acíclico permite que los directorios compartan subdirectorios y archivos (<a class="reference internal" href="#fig-grafo-aciclico"><span class="std std-numref">Fig. 37</span></a>). El mismo archivo o subdirectorio puede estar en dos directorios diferentes. El grafo acíclico es una generalización natural del esquema de directorios estructurados en árbol.</p>
+<div class="figure align-default" id="fig-grafo-aciclico">
+<a class="reference internal image-reference" href="../_images/acyclic-graph.png"><img alt="../_images/acyclic-graph.png" src="../_images/acyclic-graph.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">Estructura de grafo acíclico.</span><a class="headerlink" href="#fig-grafo-aciclico" title="Permalink to this image">¶</a></p>
+</div>
+<p>Es importante señalar que un archivo (o directorio) compartido no es lo mismo que dos copias del archivo. Con dos copias, cada usuario puede ver una copia en lugar del original, pero si un usuario cambia el archivo, los cambios no aparecerán en la copia del otro. Con un archivo compartido, sólo existe un archivo real, por lo que cualquier cambio realizado por un usuario es inmediatamente visible para la otra. Compartir es particularmente importante para los subdirectorios; un nuevo archivo creado por un usuario aparecerá automáticamente en todos los subdirectorios compartidos.</p>
+<p>Los archivos y subdirectorios compartidos pueden implementarse de varias maneras. Una forma común, ejemplificada por muchos de los sistemas UNIX, es crear una nueva entrada de directorio llamada enlace. Un enlace es efectivamente un puntero a otro archivo o subdirectorio. Por ejemplo, un enlace puede implementarse como un nombre de ruta absoluto o relativo.</p>
+<p>Otro enfoque común para implementar archivos compartidos es simple- mente duplicar toda la información sobre ellos en ambos directorios compartidos. Un problema importante de las entradas de directorio duplicadas es mantener la coherencia cuando se modifica un archivo.</p>
+<p>Una estructura de grafo acíclica es más flexible que una simple estructura de árbol, pero también es más compleja. Uno de los problemas es el de la eliminación de archivos. Una posibilidad es eliminar el archivo cada vez que alguien lo borre, pero esta acción puede dejar punteros colgantes al archivo ahora inexistente. Peor aún, si los punteros del archivo restante contienen direcciones reales del disco, y el espacio se reutiliza posteriormente para otros archivos, estos punteros colgantes pueden apuntar hacia otros archivos.</p>
+<p>En un sistema en el que compartir archivos se realiza mediante enlaces simbólicos (<a class="reference internal" href="#fig-enlace-simbolico"><span class="std std-numref">Fig. 38</span></a>), la eliminación de un enlace no tiene por qué afectar al archivo original; sólo se elimina el enlace. Si se borra la entrada del archivo en sí, el espacio para el archivo se deslocaliza, dejando los enlaces colgando. Podemos buscar estos enlaces y eliminarlos también, pero a menos que se mantenga una lista de los enlaces asociados con cada archivo, esta búsqueda puede ser costosa. Alternativamente, podemos dejar los enlaces hasta que se intente usarlos. En ese momento, podemos determinar que el archivo del nombre dado por el enlace no existe y puede fallar en la resolución del nombre del enlace; el acceso se trata como con cualquier otro nombre de archivo ilegal. En el caso de UNIX, los enlaces simbólicos se mantienen cuando se elimina un archivo, y depende del usuario darse cuenta de que el archivo original ha desaparecido o ha sido reemplazado. Microsoft Windows utiliza el mismo enfoque.</p>
+<div class="figure align-default" id="fig-enlace-simbolico">
+<a class="reference internal image-reference" href="../_images/enlace-simbolico.png"><img alt="../_images/enlace-simbolico.png" src="../_images/enlace-simbolico.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">Enlace simbólico en Microsoft Windows.</span><a class="headerlink" href="#fig-enlace-simbolico" title="Permalink to this image">¶</a></p>
+</div>
+<p>Otro enfoque para la eliminación es preservar el archivo hasta que se eli- minen todas las referencias a él. Para aplicar este enfoque, se debe disponer de algún mecanismo para determinar que se ha suprimido la última referencia al fichero. Cuando se elimina un enlace o una entrada de directorio, se elimina su entrada en la lista. El archivo se elimina cuando su lista de referencia de archivos está vacía.</p>
+<p>Para evitar problemas como los que se acaban de exponer, algunos sistemas simplemente no permiten directorios o enlaces compartidos.</p>
+</div>
+<div class="section" id="montaje-del-sistema-de-archivos">
+<h2>Montaje del sistema de archivos<a class="headerlink" href="#montaje-del-sistema-de-archivos" title="Permalink to this headline">¶</a></h2>
+<p>Al igual que un archivo debe abrirse antes de ser utilizado, un sistema de archivos debe montarse antes de que pueda estar disponible para los procesos en el sistema. Más concretamente, la estructura de directorios puede estar construida a partir de múltiples volúmenes, que deben montarse para que estén disponibles dentro del espacio de nombres del sistema de archivos.</p>
+<p>El procedimiento de montaje es sencillo. Se le da al sistema operativo el nombre del dispositivo y el punto de montaje, es decir, la ubicación dentro de la estructura de archivos en la que se debe montar el sistema de archivos. Algunos sistemas operativos requieren que se proporcione un tipo de sistema de archivos, mientras que otros inspeccionan las estructuras del dispositivo y determinan el tipo de sistema de archivos. Normalmente, un punto de montaje es un directorio vacío.</p>
+<p>A continuación, el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> verifica que el dispositivo contiene un sistema de archivos válido. Lo hace pidiendo al controlador del dispositivo que lea el directorio del dispositivo y verificando que el directorio tiene el formato esperado. Finalmente, el sistema operativo anota en su estructura de directorios que un sistema de archivos está montado en el punto de montaje especificado. Este esquema permite al sistema operativo recorrer su estructu- ra de directorios, cambiando entre sistemas de archivos, e incluso sistemas de archivos de diversos tipos, según proceda.</p>
+<p>Considere las acciones del <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> de macOS X. Siempre que el sistema se encuentra con un disco por primera vez (ya sea en el momento del arranque o mientras el sistema está funcionando), el <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a> busca un sistema de archivos en el dispositivo. Si lo encuentra, monta automáticamente el sistema de archivos en el directorio <code class="docutils literal notranslate"><span class="pre">/Volumes</span></code>, añadiendo un icono de carpeta etiquetado con el nombre del sistema de archivos (tal y como está almacenado en el directorio del dispositivo). El usuario puede entonces hacer clic en el icono y así mostrar el nuevo sistema de archivos montado.</p>
+<div class="figure align-default" id="fig-administrador-discos">
+<a class="reference internal image-reference" href="../_images/administrador-discos.png"><img alt="../_images/administrador-discos.png" src="../_images/administrador-discos.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Herramienta administrativa de discos de Windows 10.</span><a class="headerlink" href="#fig-administrador-discos" title="Permalink to this image">¶</a></p>
+</div>
+<p>La familia de <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>s de Microsoft Windows mantiene una estructura de directorios ampliada de dos niveles, con letras de unidad asignadas a dispositivos y volúmenes (<a class="reference internal" href="#fig-administrador-discos"><span class="std std-numref">Fig. 39</span></a>). Los volúmenes tienen una estructura de directorios gráfica general asociada con la letra de unidad. Como por ejemplo, la ruta <code class="docutils literal notranslate"><span class="pre">C:\Users\Public&gt;</span></code> identificada en el prompt de la <a class="reference internal" href="#fig-rutas-win"><span class="std std-numref">Fig. 34</span></a>, hace referencia al disco duro local como la unidad <code class="docutils literal notranslate"><span class="pre">C:</span></code>.</p>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografia<a class="headerlink" href="#bibliografia" title="Permalink to this headline">¶</a></h2>
+<p id="bibtex-bibliography-sistemas-de-archivos/directorios-y-estructuras-0"><dl class="citation">
+<dt class="bibtex label" id="tanenbaum-modern-2015"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Andrew S Tanenbaum and Herbert Bos. <em>Modern Operating Systems: Global Edition</em>. Pearson Education Limited, 2015. ISBN 978-1-292-06195-5.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sistemas-de-archivos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="metodos-de-acceso.html" title="previous page">Métodos de acceso</a>
+    <a class='right-next' id="next-link" href="archivos-compartidos.html" title="next page">Archivos compartidos</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

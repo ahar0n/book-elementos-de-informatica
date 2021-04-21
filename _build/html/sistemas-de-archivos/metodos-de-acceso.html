@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Métodos de acceso &#8212; Elementos de Informática</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Directorios y estructuras" href="directorios-y-estructuras.html" />
+    <link rel="prev" title="Concepto de archivo" href="concepto-de-archivo.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Elementos de Informática</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prefacio.html">
+   Prefacio
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Almacenamiento de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/digitos-binarios.html">
+   Dígitos binarios
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/memoria-principal.html">
+   Memoria principal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/almacenamiento-masivo.html">
+   Almacenamiento masivo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../almacenamiento-de-datos/representacion-de-la-informacion.html">
+   Representación de la información
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Manipulación de datos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/organizacion-de-un-computador.html">
+   Organización de un computador
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/ejecucion-de-un-programa.html">
+   Ejecución de un programa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../manipulacion-de-datos/comunicacion-con-perifericos.html">
+   Comunicación con periféricos
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Sistema de archivos
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="concepto-de-archivo.html">
+   Concepto de archivo
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Métodos de acceso
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="directorios-y-estructuras.html">
+   Directorios y estructuras
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="archivos-compartidos.html">
+   Archivos compartidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="proteccion.html">
+   Protección
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../anexos/acronimos.html">
+   Acrónimos
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sistemas-de-archivos/metodos-de-acceso.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografia
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="metodos-de-acceso">
+<h1>Métodos de acceso<a class="headerlink" href="#metodos-de-acceso" title="Permalink to this headline">¶</a></h1>
+<p>Los archivos almacenan información. Cuando se utiliza, se debe acceder a esta información y leerla en la memoria del ordenador. Se puede acceder a la información del archivo de varias maneras. Algunos sistemas sólo proporcionan un método de acceso a los archivos, mientras que otros admiten muchos métodos de acceso.</p>
+<dl class="simple myst">
+<dt><em>Secuential access</em></dt><dd><p>En el método de acceso secuencial la información del archivo se procesa en orden, un registro tras otro. Este modo de acceso es el más común; por ejemplo, los editores de texto y compiladores <a class="bibtex reference internal" href="#aho-compilers-2006" id="id1">[1]</a> funciona tan bien en los dispositivos de acceso secuencial como en los de acceso aleatorio.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Compilador es un software que traduce el código fuente de un lenguaje de programación de alto nivel a un lenguaje de bajo nivel (por ejemplo, lenguaje ensamblador, código objeto o código de máquina) para crear un programa ejecutable.</p>
+</div>
+<dl class="simple myst">
+<dt><em>Direct access</em></dt><dd><p>En el método de acceso directo o acceso relativo), un archivo está compuesto por registros lógicos de longitud fija que permiten a los programas leer y escribir registros rápidamente sin ningún orden en particular. Con este método se permite el acceso aleatorio a cualquier bloque de archivos. El archivo se ve como una secuencia numerada de bloques o registros. Así, es posible leer el bloque 14, luego leer el bloque 53, y luego escribir el bloque 7. No hay restricciones en el orden de lectura o escritura para un archivo de acceso directo. Los archivos de acceso directo son de gran utilidad para el acceso inmediato a grandes cantidades de información. Las bases de datos suelen ser de este tipo. Cuando llega una solicitud de información, se calcula el bloque que contiene la respuesta y luego se ese bloque directamente para proporcionar la información deseada.</p>
+</dd>
+</dl>
+<p>No todos los <a class="reference internal" href="../anexos/acronimos.html#term-OS"><span class="xref std std-term">OS</span></a>s admiten el acceso secuencial y directo a los archivos. Algunos sistemas sólo permiten el acceso secuencial a los archivos; otros sólo permiten el acceso directo. Algunos sistemas requieren que un archivo se defina como secuencial o directo cuando se crea. Sólo se puede acceder a ese fichero de manera coherente con su declaración.</p>
+<div class="section" id="bibliografia">
+<h2>Bibliografia<a class="headerlink" href="#bibliografia" title="Permalink to this headline">¶</a></h2>
+<p id="bibtex-bibliography-sistemas-de-archivos/metodos-de-acceso-0"><dl class="citation">
+<dt class="bibtex label" id="aho-compilers-2006"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Alfred V Aho, Monica S Lam, Ravi Sethi, and Jeffrey D Ullman. <em>Compilers: Principles, Techniques &amp; Tools</em>. Addison wesley, 2 edition, 2006.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sistemas-de-archivos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="concepto-de-archivo.html" title="previous page">Concepto de archivo</a>
+    <a class='right-next' id="next-link" href="directorios-y-estructuras.html" title="next page">Directorios y estructuras</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Aharon<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
